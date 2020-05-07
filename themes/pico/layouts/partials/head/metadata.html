@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type"
+			content="text/html; charset=utf-8" />
+<meta name=viewport
+			content="width=device-width, initial-scale=1">
+{{ if $.Site.Params.description }}
+<meta name="description" content="{{ .Description }}" />
+{{ end }}
+<title>
+	{{ .Title }}{{ if ne .Title .Site.Title }} -
+	{{ .Site.Title }}{{ end }}
+</title>
+{{ with .OutputFormats.Get "RSS" }}
+<link href="{{ .RelPermalink }}" rel="alternate"
+			type="application/rss+xml"
+			title="{{ $.Site.Title }}" />
+{{ end }}

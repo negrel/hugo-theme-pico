@@ -1,0 +1,13 @@
+<meta name="twitter:card" content="summary_large_image">
+{{ if ne .IsHome }}
+<meta name="twitter:image:width" content="$.">
+<meta name="twitter:image:height" content="600">
+{{ end }}
+{{ if .Site.twitter }}
+<meta name="twitter:site" content="{{ .Site.twitter }}">
+<meta name="twitter:creator" content="{{ .Site.twitter }}">
+{{ end }}
+<meta name="twitter:title" content="Page Title">
+<meta name="twitter:description" content="Page description less than 200 characters">
+
+<meta name="twitter:image:src" content="http://www.example.com/image.jpg">
