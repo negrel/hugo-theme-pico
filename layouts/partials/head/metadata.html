@@ -14,3 +14,9 @@
 			type="application/rss+xml"
 			title="{{ $.Site.Title }}" />
 {{ end }}
+
+{{ if .Site.Params.favicon }}
+<link rel="icon" href="{{ . }}">
+{{ else }}
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+{{ end }}

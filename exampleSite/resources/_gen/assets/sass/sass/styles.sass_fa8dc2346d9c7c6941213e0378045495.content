@@ -6058,7 +6058,7 @@ video {
 }
 
 .font-serif {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: charter, Georgia, Cambria, Times New Roman, Times, serif;
 }
 
 .font-mono {
@@ -19042,6 +19042,201 @@ video {
   transition-delay: 1000ms;
 }
 
+@font-face {
+  font-family: 'charter';
+
+  src: url("/fonts/charter/bold_italic.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'charter';
+
+  src: url("/fonts/charter/bold.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'charter';
+
+  src: url("/fonts/charter/italic.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'charter';
+
+  src: url("/fonts/charter/regular.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url(/fonts/playfair_display/regular.woff2) format("woff2");
+}
+
+h1 {
+  font-size: 1.875rem;  font-family: charter, Georgia, Cambria, Times New Roman, Times, serif
+}
+
+h2 {
+  font-size: 1.25rem
+}
+
+h3 {
+  font-size: 1.125rem
+}
+
+a {
+  --text-opacity: 1;
+  color: #3182ce;
+  color: rgba(49, 130, 206, var(--text-opacity));
+  text-decoration: underline
+}
+
+p {
+  font-family: charter, Georgia, Cambria, Times New Roman, Times, serif
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -24478,7 +24673,7 @@ video {
   }
 
   .sm\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: charter, Georgia, Cambria, Times New Roman, Times, serif;
   }
 
   .sm\:font-mono {
@@ -42899,7 +43094,7 @@ video {
   }
 
   .md\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: charter, Georgia, Cambria, Times New Roman, Times, serif;
   }
 
   .md\:font-mono {
@@ -61320,7 +61515,7 @@ video {
   }
 
   .lg\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: charter, Georgia, Cambria, Times New Roman, Times, serif;
   }
 
   .lg\:font-mono {
@@ -79741,7 +79936,7 @@ video {
   }
 
   .xl\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: charter, Georgia, Cambria, Times New Roman, Times, serif;
   }
 
   .xl\:font-mono {

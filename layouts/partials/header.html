@@ -1,0 +1,21 @@
+<header class="w-full px-4 pt-4">
+	<nav class="flex items-center justify-between flex-wrap">
+		{{ if .Site.Params.favicon }}
+		<a href="{{ .Site.Home.Permalink }}"
+			 class="flex items-center text-gray-800 font-bold no-underline">
+			<h1 class="hidden md:block">
+				{{ .Site.Title }}
+			</h1>
+
+			<img width="35" height="35" class="md:hidden"
+					 src="{{ .Site.Params.favicon }}">
+			{{ else }}
+			<h1>
+				{{ .Site.Title }}
+			</h1>
+		</a>
+		{{ end }}
+
+
+	</nav>
+</header>
