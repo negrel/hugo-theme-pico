@@ -1,21 +1,22 @@
-<header class="w-full px-4 pt-4">
+<header class="w-full pt-2 px-4 md:px-20 lg:px-24 xl:px-48">
 	<nav class="flex items-center justify-between flex-wrap">
-		{{ if .Site.Params.favicon }}
-		<a href="{{ .Site.Home.Permalink }}"
-			 class="flex items-center text-gray-800 font-bold no-underline">
+		<a href="{{ .Site.Home.Permalink }}" class="flex items-center text-gray-800 font-bold no-underline">
+			{{ if .Site.Params.favicon }}
 			<h1 class="hidden md:block">
 				{{ .Site.Title }}
 			</h1>
 
-			<img width="35" height="35" class="md:hidden"
-					 src="{{ .Site.Params.favicon }}">
+			<!-- <img width="35" height="35" class="md:hidden" src="{{ .Site.Params.favicon }}"> -->
+
+			<div class="md:hidden">
+			{{ partial "icon" . }}
+			</div>
 			{{ else }}
 			<h1>
 				{{ .Site.Title }}
 			</h1>
+			{{ end }}
 		</a>
-		{{ end }}
-
 
 	</nav>
 </header>
