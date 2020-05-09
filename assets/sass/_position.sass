@@ -41,3 +41,9 @@ $std-iterator: (1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20, 24, 32, 40, 48, 56, 64)
 
 		.left-#{$i}d12
 			left: #{($i / 12) * 100%}
+
+.absolute-center
+	@apply .absolute
+	@apply .top-1/2
+	@apply .left-1/2
+	transform: translate(-50%, -50%)
