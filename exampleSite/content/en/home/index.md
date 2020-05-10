@@ -1,5 +1,5 @@
 +++
 title = "Get smarter about what matters to you."
-image = "banner.png"
 headless = true
+tags = ["HTML5", "CSS3", "NODE.JS", "KOTLIN", ""]
 +++

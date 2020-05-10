@@ -1,12 +1,21 @@
-baseURL = "/"
-languageCode = "en-us"
-title = "Pico"
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Pico'
 themesDir = '../..'
 theme = 'pico'
+defaultContentLanguage = 'en'
 
 [params]
-	# Your site icon (.ico, .png, .jpg, .svg, ...)
-	# Favicon replace the site title of the header on small
-	# device.
-	favicon = "/svg/icon.svg"
+favicon = '/svg/icon.svg'
+customCSS = []
+[languages.en]
+weight = 0
+languageName = 'English'
+languageCode = 'en'
+contentDir = 'content/en'
 
+[languages.fr]
+weight = 2
+languageName = 'Français'
+languageCode = 'fr'
+contentDir = 'content/fr'
