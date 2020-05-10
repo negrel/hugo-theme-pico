@@ -1,19 +1,9 @@
 {{ define "main" }}
 {{ with .Site.GetPage "/home"}}
 <h1 class="text-center text-gray-800 font-bold mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">{{ .Title }}</h1>
-<!-- {{ with .Resources.GetMatch .Params.Image }}
-<div class="mx-auto max-w-md sm:max-w-lg md:max-w-xg lg:max-w-2xl xl:max-w-3xl mt-10 lg:mt-20">
-	<img class="shadow-lg md:shadow-xl lg:shadow-2xl" src="{{ .Permalink }}" alt="{{ .Name }}">
-</div>
-{{ end }} -->
-<div class="skills overflow-hidden flex flex-wrap px-4 md:px-20 lg:px-24 xl:px-48">
-	<div class="skill">
-		<img src="/svg/hashtag.svg" alt="hastag icon">
-		HTML5
-	</div>
-{{ range .Params.Skills }}
-	{{ . }}
-{{ end }}
+<div class="tags overflow-hidden flex flex-wrap justify-center mx-auto mt-20 px-4 max-w-6xl">
+	{{ $tags := .Site.Taxonomies.tags }}
+	{{ partial "taxonomy_list" $tags }}
 </div>
 {{ end }}
 {{ end }}
