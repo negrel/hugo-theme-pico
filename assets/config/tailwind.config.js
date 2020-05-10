@@ -3,6 +3,21 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'serif': ['charter', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
+			},
+			colors: {
+				// material color => grey
+				// tailwindcss grey => gray
+				grey: {
+					'100': '#f5f5f5',
+					'200': '#eeeeee',
+					'300': '#e0e0e0',
+					'400': '#bdbdbd',
+					'500': '#9e9e9e',
+					'600': '#757575',
+					'700': '#616161',
+					'800': '#424242',
+					'900': '#212121',
+				}
 			}
 		},
 		boxShadow: {
@@ -22,8 +37,10 @@ module.exports = {
 			14: '0 7px 9px -4px rgba(0,0,0,0.2), 0 14px 21px 2px rgba(0,0,0,0.14), 0 5px 26px 4px rgba(0,0,0,0.12)',
 			15: '0 8px 9px -5px rgba(0,0,0,0.2), 0 15px 22px 2px rgba(0,0,0,0.14), 0 6px 28px 5px rgba(0,0,0,0.12)',
 			16: '0 8px 10px -5px rgba(0,0,0,0.2), 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12)',
-		},
+		}
 	},
-	variants: {},
+	variants: {
+		backgroundColor: ['hover', 'active']
+	},
 	plugins: []
 }
