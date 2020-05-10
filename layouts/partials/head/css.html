@@ -1,14 +1,12 @@
 {{ $bundleRaw := resources.Get "sass/styles.sass" }}
+{{ $postCSSOpts := (dict "config" "./assets/config/postcss.config.js") }}
+{{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
 
 {{ if .Site.IsServer }}
-{{ $cssOpts := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
-{{ $postCSSOpts := (dict "config" "./assets/sass/postcss.config.js") }}
 {{ $bundle := $bundleRaw | toCSS $cssOpts | postCSS $postCSSOpts }}
 <link rel="stylesheet" href="{{ $bundle.RelPermalink }}"
 			media="screen">
 {{ else }}
-{{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
-{{ $postCSSOpts := (dict "config" "./assets/css/postcss.config.js") }}
 {{ $bundle := $bundleRaw | toCSS $cssOpts | postCSS $postCSSOpts | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $bundle.RelPermalink }}"
 			crossorigin="anonymous" media="screen"
@@ -20,8 +18,7 @@
 {{ $style := resources.Get . }}
 {{/* If SASS/SCSS file */}}
 {{ if or (strings.HasSuffix $style.Name "sass") (strings.HasSuffix $style.Name "scss")}}
-{{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
-{{ $postCSSOpts := (dict "config" "./assets/sass/postcss.config.js") }}
+
 {{ $css := $style | toCSS $cssOpts | postCSS $postCSSOpts | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}"
 			crossorigin="anonymous" media="screen"
