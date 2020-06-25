@@ -1,3 +1,4 @@
+
 $std-iterator: (1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20, 24, 32, 40, 48, 56, 64)
 
 @each $i in $std-iterator
@@ -30,17 +31,17 @@ $std-iterator: (1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20, 24, 32, 40, 48, 56, 64)
 
 // Relative units (12)
 @for $i from 1 through 12
-		.top-#{$i}d12
-			top: #{($i / 12) * 100%}
+	.top-#{$i}\/12
+		top: #{($i / 12) * 100%}
 
-		.right-#{$i}d12
-			right: #{($i / 12) * 100%}
+	.right-#{$i}\/12
+		right: #{($i / 12) * 100%}
 
-		.bottom-#{$i}d12
-			bottom: #{($i / 12) * 100%}
+	.bottom-#{$i}\/12
+		bottom: #{($i / 12) * 100%}
 
-		.left-#{$i}d12
-			left: #{($i / 12) * 100%}
+	.left-#{$i}\/12
+		left: #{($i / 12) * 100%}
 
 .absolute-center
 	@apply .absolute
