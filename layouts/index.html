@@ -1,9 +1,7 @@
 {{ define "main" }}
-{{ with .Site.GetPage "/home"}}
-<h1 class="text-center text-gray-800 font-bold mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">{{ .Title }}</h1>
-<div class="tags overflow-hidden flex flex-wrap justify-center mx-auto mt-20 px-4 max-w-6xl">
-	{{ $tags := .Site.Taxonomies.tags }}
-	{{ partial "taxonomy_list" $tags }}
-</div>
+
+{{ with .Site.GetPage "/"}}
+<h1>HOME</h1>
 {{ end }}
+
 {{ end }}
