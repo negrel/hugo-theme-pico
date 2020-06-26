@@ -1,2 +1,8 @@
 [tagged_in]
 other = "Tagged in"
+
+[other_tags]
+other = "Other tags"
+
+[footer_text]
+other = "Designed by [Alexandre NEGREL](https://github.com/negrel)."

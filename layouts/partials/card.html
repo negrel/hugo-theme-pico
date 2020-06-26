@@ -1,0 +1,28 @@
+<div class="mb-4 border border-gray-300 rounded-sm overflow-hidden">
+	<a href="{{ .Permalink }}">
+		<div>
+			{{ with .Params.banner }}
+			<div class="overflow-hidden h-56 relative">
+				<img src="{{ . }}" class="w-full absolute-center">
+			</div>
+			{{ end }}
+			<div class="px-4 mt-3 mb-3">
+				<h2 class="m-0 inline-block">{{ .Title }}</h2>
+				<span class="block">{{ dateFormat "2006/01/02" .Date }}</span>
+			</div>
+			<div class="px-4 mb-3 text-gray-600">
+				{{ with .Params.subtitle }}
+				{{ substr .Plain }}
+				{{ else }}
+				{{ $splitPos := 64 }}
+				{{ if lt (len .Plain) $splitPos}}
+				{{ $splitPos = len .Plain }}
+				{{ end }}
+				{{ $lastChar := substr .Plain (sub $splitPos 1) 1 }}
+				{{ substr .Plain 0 $splitPos }}{{ if and (ne $lastChar ".") (and (ne $lastChar "?") (ne $lastChar "!")) }}...{{ end }}
+				{{ end }}
+				<a href="{{ .Permalink }}" class="text-xs mt-3 block">Read more...</a>
+			</div>
+		</div>
+	</a>
+</div>

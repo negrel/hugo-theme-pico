@@ -13,9 +13,3 @@ min_version = "0.41"
 [author]
   name = "Alexandre NEGREL"
   homepage = "https://github.com/negrel"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

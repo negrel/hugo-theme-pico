@@ -1,4 +1,6 @@
 +++
 title = "Get smarter about what matters to you."
-headless = true
+# Default banner
+[cascade]
+  banner = "/img/default_banner.jpg"
 +++

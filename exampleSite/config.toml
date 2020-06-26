@@ -6,8 +6,13 @@ theme = 'pico'
 defaultContentLanguage = 'en'
 
 [params]
-favicon = '/svg/icon.svg'
+favicon = '/favicon.png'
 customCSS = []
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
 [languages.en]
 weight = 0
 languageName = 'English'
