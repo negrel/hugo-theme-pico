@@ -1,0 +1,3 @@
++++
+title = "Elegant Hugo theme"
++++

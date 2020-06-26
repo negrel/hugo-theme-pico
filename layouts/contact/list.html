@@ -1,0 +1,28 @@
+{{ define "main" }}
+<form id="contact-form" class="tile is-ancestor" method="POST" data-netlify="true">
+	<div class="field">
+		<div class="control">
+			<input class="input" type="text" name="name" placeholder="Name">
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<input class="input" type="email" name="email" placeholder="Enter mail" required>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<textarea class="textarea" name="message" placeholder="Your Message" rows="5" required></textarea>
+		</div>
+	</div>
+	{{ with .Site.Params.email }}
+	<a class="button is-light is-pulled-left" href="mailto:{{ . }}">
+		{{ i18n "contact_email" }}
+	</a>
+	{{ end }}
+	<div class="buttons is-pulled-right">
+		<input type="reset" class="button is-primary is-light" value='{{ i18n "contact_cancel" }}' />
+		<input type="submit" class="button is-primary" value='{{ i18n "contact_submit" }}' />
+	</div>
+</form>
+{{ end }}
