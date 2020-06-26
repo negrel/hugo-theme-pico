@@ -8,9 +8,11 @@
 </head>
 
 <body class="min-h-screen flex flex-col bg-white">
+	<div id="top"></div>
+
 	{{- partial "dev/size-indicator.html" . -}}
 	{{- partial "header.html" . -}}
-	<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
+	<main class="w-full px-4 mx-auto md:max-w-4xl">
 		{{- block "main" . }}{{- end }}
 	</main>
 	{{- partial "dev/parameters.html" . -}}

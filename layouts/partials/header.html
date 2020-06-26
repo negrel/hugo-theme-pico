@@ -1,22 +1,32 @@
-<header class="w-full pt-4 px-4 md:px-20 lg:px-24 xl:px-48">
-	<nav class="flex items-center justify-between flex-wrap mx-auto max-w-screen-sm lg:max-w-screen-lg">
-		<a href="{{ .Site.Home.Permalink }}" class="flex items-center text-gray-800 font-bold no-underline">
-			{{ if .Site.Params.favicon }}
-			<h1 class="hidden md:block">
-				{{ .Site.Title }}
-			</h1>
+<header class="w-full mt-2 md:pt-0 px-5 md:mx-auto md:max-w-5xl">
+	{{/* Pico responsive icon (square and text) */}}
+	<a href="{{ .Site.Home.Permalink }}" class="inline-block font-bold no-underline">
+		<h1 class="hidden md:block font-charter tracking-normal m-0">
+			{{ .Site.Title }}
+		</h1>
 
-			<!-- <img width="35" height="35" class="md:hidden" src="{{ .Site.Params.favicon }}"> -->
-
-			<div class="md:hidden">
-				{{ partial "icon" . }}
-			</div>
-			{{ else }}
-			<h1>
-				{{ .Site.Title }}
-			</h1>
-			{{ end }}
+		<div class="md:hidden">
+			{{ partial "icon" . }}
+		</div>
+	</a>
+	<nav class="pt-3 ml-auto float-right">
+		<a href="/" class="pl-5 hover:text-black no-underline">
+			Home
 		</a>
-
+		{{ with .Site.GetPage "/blog" }}
+		<a href="/blog/" class="pl-5 hover:text-black no-underline">
+			Blog
+		</a>
+		{{ end }}
+		{{ with .Site.GetPage "/about" }}
+		<a href="/about/" class="pl-5 hover:text-black no-underline">
+			About
+		</a>
+		{{ end }}
+		{{ with .Site.GetPage "/contact" }}
+		<a href="/contact/" class="pl-5 hover:text-black no-underline">
+			Contact
+		</a>
+		{{ end }}
 	</nav>
 </header>
