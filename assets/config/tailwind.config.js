@@ -2,7 +2,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'serif': ['charter', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
+				'serif': ['Spectral', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
 			},
 			colors: {
 				// material color => grey
