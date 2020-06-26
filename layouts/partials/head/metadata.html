@@ -1,21 +1,17 @@
-<meta http-equiv="Content-Type"
-			content="text/html; charset=utf-8" />
-<meta name=viewport
-			content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width, initial-scale=1">
 {{ if $.Site.Params.description }}
 <meta name="description" content="{{ .Description }}" />
 {{ end }}
 <title>
-	{{ .Title }}
-	{{ if ne .Title .Site.Title }} - {{ .Site.Title }} {{ end }}
+	{{ .Site.Title }}
+	{{ if (and (ne .Title .Site.Title) (ne (len .Title) 0)) }} - {{ .Title }} {{ end }}
 </title>
 {{ with .OutputFormats.Get "RSS" }}
-<link href="{{ .RelPermalink }}" rel="alternate"
-			type="application/rss+xml"
-			title="{{ $.Site.Title }}" />
+<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }}
 
-{{ if .Site.Params.favicon }}
+{{ with $.Site.Params.favicon }}
 <link rel="icon" href="{{ . }}">
 {{ else }}
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
