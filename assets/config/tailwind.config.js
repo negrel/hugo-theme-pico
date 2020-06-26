@@ -3,6 +3,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'serif': ['Spectral', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+				'charter': ['charter', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
 			},
 			colors: {
 				// material color => grey
