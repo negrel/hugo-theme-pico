@@ -1,6 +1,6 @@
 +++
 title = 'Teneri et aer pilas utque terram tincta'
-tags = ['node.js', 'html5', 'css3']
+tags = ['Node.js', 'HTML5', 'CSS3']
 date = 2020-06-23
 banner = '/svg/lorem2.svg'
 +++
