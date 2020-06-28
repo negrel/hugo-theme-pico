@@ -1,6 +1,10 @@
+*
+	@apply no-blend
+	box-sizing: border-box
+
 html
+	@apply relative
 	scroll-behavior: smooth
-	font-size: 18px
 
 @media (prefers-reduced-motion: reduce) 
   html 
@@ -13,17 +17,27 @@ h1
 	@apply text-3xl font-serif my-6 tracking-tight
 
 h2
-	@apply text-xl font-bold my-4
+	@apply text-xl font-bold my-3
 
 h3
-	@apply text-lg my-3
+	@apply text-lg my-2
+
+a
+	@apply underline
 
 a, a:hover
 	@apply text-gray-800
-
+	line-break: anywhere
 
 p
-	@apply font-sans
+	@apply font-sans mb-4
 
-*
-	@apply no-blend
+ul
+	list-style: initial
+	@apply pl-6
+
+code
+	@apply bg-grey-100 p-1 rounded-md
+
+blockquote
+	@apply border-l-8 pl-4 
