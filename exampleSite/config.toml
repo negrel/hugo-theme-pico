@@ -9,6 +9,12 @@ defaultContentLanguage = 'en'
 favicon = '/favicon.png'
 customCSS = []
 
+[markup.highlight]
+guessSyntax = true
+lineNumbersInTable = true
+noClasses = false # Set to false to use the Pico default theme.
+tabWidth = 2
+
 [taxonomies]
 category = "categories"
 tag = "tags"

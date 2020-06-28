@@ -9,7 +9,7 @@ date = 2020-06-25
 ## Ne in manu victoris contraria ferreus
 
 Lorem markdownum fumantia! Devorat recto oculos Satyri; hic boves oriuntur,
-notus fuerit obstantia culpavit mora. Celanda fias suo datas esse! Chaos
+notus fuerit obstantia culpavit mora. `Celanda` fias suo datas esse! Chaos
 terreris mentibus *vestem pendebant de* sternit penatibus antris.
 
 Dedit paternis supplex habetque de caput una quaque aliquid resolvit! Genuisse
@@ -37,6 +37,19 @@ Philemon? Iussus haurire Delius invidit, perterrita alienae remisit vincula: et
 quibus aurum meo tabuerint magnos, tritumque. Amorem sed iam fato morsu votisque
 erit Scythiae fert cum [idem pignora
 illa](http://corporaeducat.org/tremescere-nec.html), Iunone?
+
+```golang
+package main
+
+import "os"
+
+func main() {
+	f, _ := os.OpenFile("hello.txt", os.O_RDWR|os.O_CREATE, 0755)
+  defer f.Close()
+
+  f.Write([]byte("Hello world"))
+}
+```
 
 Virtus lora qui? Est sub ausus cum poscit avem deseruit pennisque, ut campo,
 voluit. Accersite summa verbis, quod ille novi exsulta fontibus; una *sine
