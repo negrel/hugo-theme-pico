@@ -5,4 +5,36 @@
 <div class="text-justify leading-loose">
 	{{ .Content }}
 </div>
+
+{{ if or (.Prev) (.Next) }}
+<hr class="mb-8 mt-24">
+{{ end }}
+
+<div class="flex justify-between items-center">
+	{{ if .Prev }}
+	<div class="flex-1">
+		<a class="no-underline mr-4" href="{{ .Prev.Permalink }}">
+			<img src="/svg/top_arrow.svg" class="transform -rotate-90 inline-block">
+		</a>
+		<a href="{{ .Prev.Permalink }}">
+			<span class="">{{ .Prev.Title }}</span>
+		</a>
+	</div>
+	{{ end }}
+
+	{{ if and (.Prev) (.Next) }}
+	<span>|</span>
+	{{ end }}
+
+	{{ if .Next }}
+	<div class="flex-1 text-right">
+		<a href="{{ .Next.Permalink }}">
+			<span class="">{{ .Next.Title }}</span>
+		</a>
+		<a class="no-underline ml-4" href="{{ .Next.Permalink }}">
+			<img src="/svg/top_arrow.svg" class="transform rotate-90 inline-block">
+		</a>
+	</div>
+	{{ end }}
+</div>
 {{ end }}
