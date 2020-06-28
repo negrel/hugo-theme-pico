@@ -7,16 +7,18 @@
 	{{ partial "head/js.html" . }}
 </head>
 
-<body class="min-h-screen flex flex-col bg-white">
+<body class="min-h-screen bg-white relative pb-32">
 	<div id="top"></div>
 
 	{{- partial "dev/size-indicator.html" . -}}
 	{{- partial "header.html" . -}}
-	<main class="w-full px-4 mx-auto md:max-w-4xl">
+	<main class="w-full px-4 pt-8 mx-auto md:max-w-4xl">
 		{{- block "main" . }}{{- end }}
 	</main>
-	{{- partial "dev/parameters.html" . -}}
-	{{- partial "footer.html" . -}}
+	<div class="absolute bottom-0 w-full">
+		{{- partial "footer.html" . -}}
+		{{- partial "dev/parameters.html" . -}}
+	</div>
 </body>
 
 </html>

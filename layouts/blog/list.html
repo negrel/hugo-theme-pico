@@ -2,8 +2,15 @@
 <h1 class="text-center font-serif mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">
 	{{ .Title }}
 </h1>
-<div class="overflow-hidden flex flex-wrap justify-center mx-auto mt-20 px-4 max-w-6xl">
+<div class="overflow-hidden flex flex-wrap justify-center mx-auto my-16 px-4 max-w-6xl">
 	{{ $tags := .Site.Taxonomies.tags }}
 	{{ partial "taxonomy_list" $tags }}
+</div>
+<div>
+	{{ range $page := .Pages}}
+	<div class="max-w-xl mx-auto">
+		{{ partial "card.html" $page }}
+	</div>
+	{{ end }}
 </div>
 {{ end }}

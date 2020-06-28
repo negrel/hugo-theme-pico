@@ -1,11 +1,11 @@
-<header class="w-full mt-2 md:pt-0 px-5 md:mx-auto md:max-w-5xl">
+<header class="w-full px-5 md:mx-auto md:max-w-5xl">
 	{{/* Pico responsive icon (square and text) */}}
-	<a href="{{ .Site.Home.Permalink }}" class="inline-block font-bold no-underline">
+	<a href="{{ .Site.Home.Permalink }}" class="inline-block font-bold no-underline select-none">
 		<h1 class="hidden md:block font-charter tracking-normal m-0">
 			{{ .Site.Title }}
 		</h1>
 
-		<div class="md:hidden">
+		<div class="pt-2 md:hidden">
 			{{ partial "icon" . }}
 		</div>
 	</a>

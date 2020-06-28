@@ -1,42 +1,40 @@
 {{ define "main" }}
-<div class="mt-12 w-full">
-	<div class="w-full lg:w-1/3 inline-block">
-		<div class="inline-block">
-			<p class="tracking-widest text-xs text-gray-700">
-				{{ i18n "tagged_in" | upper }}
-			</p>
-			<h2 class="mt-0 text-3xl">
-				{{ .Name | title }}
-			</h2>
-		</div>
-		<div>
-			<hr>
-			<p class="mt-4 mb-2 text-sm">
-				{{ i18n "other_tags" }}
-			</p>
-			{{/*  All tags except the currently selected  */}}
-			{{ $otherTags := newScratch }}
-			{{ range $tag, $value := .Site.Taxonomies.tags }}
-			{{ $otherTags.Set $tag $value}}
-			{{ end }}
-			{{ $otherTags.Delete .Name }}
-			<div class="flex flex-wrap text-xs">
-				{{ range $tag, $value := $otherTags.Values }}
-				<a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">
-					<div class="py-1 px-2 mr-2 mb-2 border rounded-md">
-						{{ $tag }}
-					</div>
-				</a>
-				{{ end }}
-			</div>
-		</div>
-	</div>
-	<div class="mt-16 lg:float-right lg:pl-2 lg:w-2/3">
-		{{ range $index, $page := .Data.Pages }}
-		<div>
-			{{ partial "card.html" $page }}
-		</div>
+<div class="w-full lg:w-1/3 lg:pr-8 lg:sticky top-12">
+	<p class="tracking-widest pb-0 text-xs text-gray-700">
+		{{ i18n "tagged_in" | upper }}
+	</p>
+	<h2 class="mt-0 text-3xl">
+		{{ .Name | upper }}
+	</h2>
+	<div>
+		<hr>
+		<p class="mt-4 text-sm">
+			{{ i18n "other_tags" }}
+		</p>
+		{{/* All tags except the currently selected */}}
+		{{ $otherTags := newScratch }}
+		{{ range $tag, $value := .Site.Taxonomies.tags }}
+		{{ $otherTags.Set $tag $value}}
 		{{ end }}
+		{{ $otherTags.Delete .Name }}
+		<div class="flex flex-wrap text-xs">
+			{{ range $tag, $value := $otherTags.Values }}
+			<a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">
+				<div class="py-1 px-2 mr-2 mb-2 border rounded-md">
+					{{ $tag | upper}}
+				</div>
+			</a>
+			{{ end }}
+		</div>
 	</div>
+</div>
+
+{{/* We don't use float or absolute positioning because of the sticky "tagged_in" element */}}
+<div class="lg:pl-2 lg:w-2/3 lg:left-1/3 relative lg:-mt-24">
+	{{ range $index, $page := .Data.Pages }}
+	<div>
+		{{ partial "card.html" $page }}
+	</div>
+	{{ end }}
 </div>
 {{ end }}
