@@ -19,7 +19,7 @@
 		{{ $otherTags.Delete .Name }}
 		<div class="flex flex-wrap text-xs">
 			{{ range $tag, $value := $otherTags.Values }}
-			<a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">
+			<a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}" class="no-underline">
 				<div class="py-1 px-2 mr-2 mb-2 border rounded-md">
 					{{ $tag | upper}}
 				</div>

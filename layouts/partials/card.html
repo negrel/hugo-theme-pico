@@ -1,5 +1,5 @@
 <div class="mb-4 border border-gray-300 rounded-sm overflow-hidden">
-	<a href="{{ .Permalink }}">
+	<a href="{{ .Permalink }}" class="no-underline">
 		<div>
 			{{ with .Params.banner }}
 			<div class="overflow-hidden h-56 relative">
@@ -8,7 +8,7 @@
 			{{ end }}
 			<div class="px-4 mt-3 mb-3">
 				<h2 class="m-0 inline-block">{{ .Title }}</h2>
-				<span class="block">{{ dateFormat "2006/01/02" .Date }}</span>
+				<span class="block no-underline">{{ dateFormat "2006/01/02" .Date }}</span>
 			</div>
 			<div class="px-4 mb-3 text-gray-600">
 				{{ with .Params.subtitle }}
@@ -21,7 +21,7 @@
 				{{ $lastChar := substr .Plain (sub $splitPos 1) 1 }}
 				{{ substr .Plain 0 $splitPos }}{{ if and (ne $lastChar ".") (and (ne $lastChar "?") (ne $lastChar "!")) }}...{{ end }}
 				{{ end }}
-				<a href="{{ .Permalink }}" class="text-xs mt-3 block">Read more...</a>
+				<a href="{{ .Permalink }}" class="text-xs mt-3 block no-underline">Read more...</a>
 			</div>
 		</div>
 	</a>
