@@ -1,5 +1,8 @@
+const inset = require('./generators/position');
+
 module.exports = {
 	theme: {
+		inset,
 		extend: {
 			fontFamily: {
 				'serif': ['Spectral', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
