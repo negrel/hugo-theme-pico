@@ -10,5 +10,8 @@ other = "Previous"
 [next]
 other = "Next"
 
+[back]
+other = "Back"
+
 [footer_text]
 other = "Designed by [Alexandre NEGREL](https://github.com/negrel)."
