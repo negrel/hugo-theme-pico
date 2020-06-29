@@ -4,10 +4,14 @@ title = 'Pico'
 themesDir = '../..'
 theme = 'pico'
 defaultContentLanguage = 'en'
+paginate = 10 # number of blog post per page
 
 [params]
 favicon = '/favicon.png'
-customCSS = []
+customCSS = [
+	"style/style.css",
+	"style/theme.sass"
+] # Path relative to assets folder
 
 [markup.highlight]
 guessSyntax = true
