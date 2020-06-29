@@ -6,11 +6,48 @@
 	{{ $tags := .Site.Taxonomies.tags }}
 	{{ partial "taxonomy_list" $tags }}
 </div>
+
 <div>
-	{{ range $page := .Pages}}
+	{{ $paginator := .Paginate (where .Pages "Type" "blog") }}
+	{{ range $paginator.Pages }}
 	<div class="max-w-xl mx-auto">
-		{{ partial "card.html" $page }}
+		{{ partial "card.html" . }}
+	</div>
+	{{ end }}
+
+</div>
+
+{{/* Pagination */}}
+{{ if or ($paginator.HasPrev) ($paginator.HasNext) }}
+<hr class="mb-8 mt-24">
+{{ end }}
+
+<div class="flex justify-between items-center">
+	{{ with $paginator.Prev }}
+	<div class="flex-1">
+		<a class="no-underline mr-4" href="{{ .URL }}">
+			<img src="/svg/top_arrow.svg" class="transform -rotate-90 inline-block">
+		</a>
+		<a href="{{ .URL }}">
+			<span class="">{{ i18n "previous" | title }}</span>
+		</a>
+	</div>
+	{{ end }}
+
+	{{ if and ($paginator.HasPrev) ($paginator.HasNext) }}
+	<span class="text-gray-600">|</span>
+	{{ end }}
+
+	{{ with $paginator.Next }}
+	<div class="flex-1 text-right">
+		<a href="{{ .URL }}">
+			<span class="">{{ i18n "next" | title }}</span>
+		</a>
+		<a class="no-underline ml-4" href="{{ .URL }}">
+			<img src="/svg/top_arrow.svg" class="transform rotate-90 inline-block">
+		</a>
 	</div>
 	{{ end }}
 </div>
+
 {{ end }}

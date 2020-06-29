@@ -4,5 +4,11 @@ other = "Marqués dans"
 [other_tags]
 other = "Autre tags"
 
+[previous]
+other = "Précédent"
+
+[next]
+other = "Suivant"
+
 [footer_text]
 other = "Design by [Alexandre NEGREL](https://github.com/negrel)."
