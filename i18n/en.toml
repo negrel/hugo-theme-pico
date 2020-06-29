@@ -4,6 +4,21 @@ other = "Tagged in"
 [other_tags]
 other = "Other tags"
 
+[read_more]
+other = "Read more"
+
+[name]
+other = "Name"
+
+[your_message]
+other = "Your message"
+
+[cancel]
+other = "Cancel"
+
+[submit]
+other = "Submit"
+
 [previous]
 other = "Previous"
 
@@ -12,6 +27,9 @@ other = "Next"
 
 [back]
 other = "Back"
+
+[contact_email]
+other = "Contact via email"
 
 [footer_text]
 other = "Designed by [Alexandre NEGREL](https://github.com/negrel)."

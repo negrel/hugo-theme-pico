@@ -21,7 +21,7 @@
 				{{ $lastChar := substr .Plain (sub $splitPos 1) 1 }}
 				{{ substr .Plain 0 $splitPos }}{{ if and (ne $lastChar ".") (and (ne $lastChar "?") (ne $lastChar "!")) }}...{{ end }}
 				{{ end }}
-				<a href="{{ .Permalink }}" class="text-xs mt-3 block no-underline">Read more...</a>
+				<a href="{{ .Permalink }}" class="text-xs mt-3 block no-underline">{{ i18n "read_more" }}...</a>
 			</div>
 		</div>
 	</a>

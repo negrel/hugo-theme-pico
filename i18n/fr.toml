@@ -4,6 +4,21 @@ other = "Marqués dans"
 [other_tags]
 other = "Autre tags"
 
+[read_more]
+other = "Lire plus"
+
+[name]
+other = "Nom"
+
+[your_message]
+other = "Votre message"
+
+[cancel]
+other = "Annuler"
+
+[submit]
+other = "Envoyer"
+
 [previous]
 other = "Précédent"
 
@@ -12,6 +27,9 @@ other = "Suivant"
 
 [back]
 other = "Retour"
+
+[contact_email]
+other = "Contacter via email"
 
 [footer_text]
 other = "Design by [Alexandre NEGREL](https://github.com/negrel)."

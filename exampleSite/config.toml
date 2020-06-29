@@ -12,6 +12,7 @@ customCSS = [
 	"style/style.css",
 	"style/theme.sass"
 ] # Path relative to assets folder
+email = "example@mail.com"
 
 [markup.highlight]
 guessSyntax = true
