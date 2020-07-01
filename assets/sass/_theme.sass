@@ -42,5 +42,14 @@ code
 blockquote
 	@apply border-l-8 pl-4 
 
-input
-	@apply outline-none
+input, textarea, button
+	@apply outline-none p-2 mb-4 border rounded-md
+
+input:not([type='checkbox']):not([type='button']):not([type='submit']):not([type='reset']):not([type='color']):not([type='file']):not([type='hidden']):not([type='image']):not([type='radio']), textarea
+	@apply w-full
+
+input[type='submit'], input[type='reset']
+	@apply cursor-pointer
+
+input:focus, textarea:focus, button:hover
+	@apply border-green-300 border-2
