@@ -28,8 +28,17 @@ other = "Next"
 [back]
 other = "Back"
 
+[contact]
+other = "Contact"
+
 [contact_email]
 other = "Contact via email"
+
+[latest_post]
+other = "Latest post"
+
+[reading_time]
+other = "{{ .ReadingTime }} min read"
 
 [footer_text]
 other = "Designed by [Alexandre NEGREL](https://github.com/negrel)."

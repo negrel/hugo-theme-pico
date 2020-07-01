@@ -1,4 +1,4 @@
-<div class="mb-4 border border-gray-300 rounded-sm overflow-hidden">
+<div class="mb-4 border border-gray-300 rounded-md overflow-hidden">
 	<a href="{{ .Permalink }}" class="no-underline">
 		<div>
 			{{ with .Params.banner }}
@@ -8,7 +8,8 @@
 			{{ end }}
 			<div class="px-4 mt-3 mb-3">
 				<h2 class="m-0 inline-block">{{ .Title }}</h2>
-				<span class="block no-underline">{{ dateFormat "2006/01/02" .Date }}</span>
+				<code class="float-right font-sans font-thin">{{ i18n "reading_time" . }}</code>
+				<span class="block no-underline font-thin text-gray-700">{{ dateFormat "02.01.2006" .Date }}</span>
 			</div>
 			<div class="px-4 mb-3 text-gray-600">
 				{{ with .Params.subtitle }}
