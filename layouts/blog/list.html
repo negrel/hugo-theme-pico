@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1 class="text-center font-serif mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">
+<h1 class="text-center mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">
 	{{ .Title }}
 </h1>
 <div class="overflow-hidden flex flex-wrap justify-center mx-auto my-16 px-4 max-w-6xl">
@@ -26,7 +26,7 @@
 	{{ with $paginator.Prev }}
 	<div class="flex-1">
 		<a class="no-underline mr-4" href="{{ .URL }}">
-			<img src="/svg/top_arrow.svg" class="transform -rotate-90 inline-block">
+			<img src="/icons/top_arrow.svg" class="transform -rotate-90 inline-block">
 		</a>
 		<a href="{{ .URL }}">
 			<span class="">{{ i18n "previous" | title }}</span>
@@ -44,7 +44,7 @@
 			<span class="">{{ i18n "next" | title }}</span>
 		</a>
 		<a class="no-underline ml-4" href="{{ .URL }}">
-			<img src="/svg/top_arrow.svg" class="transform rotate-90 inline-block">
+			<img src="/icons/top_arrow.svg" class="transform rotate-90 inline-block">
 		</a>
 	</div>
 	{{ end }}

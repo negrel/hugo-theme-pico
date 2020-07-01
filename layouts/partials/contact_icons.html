@@ -1,0 +1,9 @@
+<div class="flex justify-center ">
+	{{ range .Site.Params.social }}
+	<a href="{{ .url }}" title="{{ .name }}"
+		class="bg-black rounded-full p-3 mr-4 transform hover:scale-110 active:scale-90 transition-transform duration-200 ease-in-out"
+		{{if .blank }} target="_blank" {{ end }}>
+		<img src="{{ .icon }}" alt="{{ .alt }}" class="w-4 h-4 md:w-6 md:h-6">
+	</a>
+	{{ end }}
+</div>

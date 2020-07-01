@@ -1,7 +1,9 @@
 {{ define "main" }}
-
-{{ with .Site.GetPage "/"}}
-<h1>HOME</h1>
-{{ end }}
-
+<h1 class="mb-0 text-center mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">
+	{{ .Title }}
+</h1>
+<hr class="mt-4 mb-8">
+<div>
+	{{ partial "contact_icons" . }}
+</div>
 {{ end }}
