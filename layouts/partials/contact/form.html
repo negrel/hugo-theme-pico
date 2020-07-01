@@ -1,0 +1,20 @@
+<form class="mb-16 w-full" method="POST" data-netlify="true">
+	<div>
+		<input type="text" name="name" placeholder="{{ i18n `name` }}">
+	</div>
+	<div>
+		<input type="email" name="email" placeholder="Email" required>
+	</div>
+	<div>
+		<textarea name="message" placeholder="{{ i18n `your_message` }}..." rows="5" required></textarea>
+	</div>
+	{{ with .Site.Params.email }}
+	<a class="bg-gray-200 px-3 py-2 rounded-md mr-2 no-underline inline-block" href="mailto:{{ . }}">
+		{{ i18n "contact_email" }}
+	</a>
+	{{ end }}
+	<div class="float-right">
+		<input type="reset" class="bg-gray-200 mr-2" value='{{ i18n "cancel" }}' />
+		<input type="submit" class="bg-black text-white" value='{{ i18n "submit" }}' />
+	</div>
+</form>

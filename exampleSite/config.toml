@@ -14,6 +14,47 @@ customCSS = [
 ] # Path relative to assets folder
 email = "example@mail.com"
 
+[[params.social]]
+name = "email"
+icon = "/icons/email.svg"
+alt = "email icon"
+url = "mailto:example@mail.com"
+
+[[params.social]]
+name = "github"
+icon = "/icons/github.svg"
+alt = "github icon"
+url = "https://github.com/negrel/"
+blank = true
+
+[[params.social]]
+name = "medium"
+icon = "/icons/medium.svg"
+alt = "medium icon"
+url = "https://medium.com/@negrel/"
+blank = true
+
+[[params.social]]
+name = "stack-overflow"
+icon = "/icons/stack-overflow.svg"
+alt = "stack-overflow icon"
+url = "https://stackoverflow.com/users/11627098/negrel"
+blank = true
+
+[[params.social]]
+name = "twitter"
+icon = "/icons/twitter.svg"
+alt = "twitter icon"
+url = "https://twitter.com/Twitter"
+blank = true
+
+[[params.social]]
+name = "facebook"
+icon = "/icons/facebook.svg"
+alt = "facebook icon"
+url = "https://facebook.com/"
+blank = true
+
 [markup.highlight]
 guessSyntax = true
 lineNumbersInTable = true
