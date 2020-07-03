@@ -1,3 +1,17 @@
-<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}"
-  {{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" {{ end }}>{{ .Text | safeHTML }}
+{{/* Avoid overflow-x with word break */}}
+{{/* Useful for long URL */}}
+{{ $lineBreak := "" }}
+{{ if gt (len .Text) 48 }}
+{{ $lineBreak = "break-words" }}
+{{ end }}
+
+{{/* Blank page if not a page of the website */}}
+{{ $target := "_self" }}
+{{ if strings.HasPrefix .Destination "http" }}
+{{ $target = "_blank" }}
+{{ end }}
+
+<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }} target="{{ $target }}"
+	class="{{ $lineBreak }}">
+	{{ .Text | safeHTML }}
 </a>
