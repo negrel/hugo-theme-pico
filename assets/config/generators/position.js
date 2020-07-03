@@ -9,6 +9,11 @@ for (unit of units) {
 	inset[`${unit}`] = `${unit * 0.25}rem`;
 }
 
+// -64 0
+for (unit of units) {
+	inset[`-${unit}`] = `${-unit * 0.25}rem`;
+}
+
 // percentage (%)
 for (let i = 2; i <= 6; i++) {
 	for (let j = 1; j < i; j++) {

@@ -1,9 +1,13 @@
 {{ define "main" }}
-<h1 class="mb-0 text-center mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">
-	{{ .Title }}
-</h1>
-<hr class="mt-4 mb-8">
-<div>
-	{{ partial "contact_icons" . }}
-</div>
+{{ with .Site.GetPage "/home"}}
+{{ range $index, $st := .Resources.ByType "page" }}
+
+{{ $widget := or $st.Params.widget "blank" }}
+{{ $widget_path := printf "widgets/%s.html" $widget}}
+{{ partial $widget_path $st }}
+<hr class="my-12">
+{{ end }}
+
+{{ end }}
+
 {{ end }}

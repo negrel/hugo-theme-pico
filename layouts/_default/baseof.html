@@ -12,12 +12,19 @@
 
 	{{- partial "dev/size-indicator.html" . -}}
 	{{- partial "header.html" . -}}
-	<main class="w-full px-4 pt-8 mx-auto md:max-w-4xl">
+
+	{{ $mainClass := "w-full px-4 pt-8 mx-auto md:max-w-4xl" }}
+	{{ if .IsHome }}
+	{{ $mainClass = "w-full px-4 pt-8 mx-auto md:max-w-4xl lg:max-w-5xl xl:max-w-6xl" }}
+	{{ end }}
+
+	<main class="{{ $mainClass }}">
 		{{- block "main" . }}{{- end }}
 	</main>
+
 	<div class="absolute bottom-0 w-full">
 		{{- partial "footer.html" . -}}
-		{{- partial "dev/parameters.html" . -}}
+		{{/*  {{- partial "dev/parameters.html" . -}} */}}
 	</div>
 </body>
 
