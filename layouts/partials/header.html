@@ -25,22 +25,9 @@
 	</div>
 
 	<nav class="">
-		<a href="{{ `/` | relLangURL }}" class="pl-5 hover:text-black no-underline">
-			Home
-		</a>
-		{{ with .Site.GetPage "/blog" }}
-		<a href="{{ `/blog/` | relLangURL }}" class="pl-5 hover:text-black no-underline">
-			Blog
-		</a>
-		{{ end }}
-		{{ with .Site.GetPage "/about" }}
-		<a href="{{ `/about/` | relLangURL }}" class="pl-5 hover:text-black no-underline">
-			About
-		</a>
-		{{ end }}
-		{{ with .Site.GetPage "/contact" }}
-		<a href="{{ `/contact/` | relLangURL }}" class="pl-5 hover:text-black no-underline">
-			Contact
+		{{ range .Site.Menus.main }}
+		<a href="{{ .URL | relLangURL }}" class="pl-5 hover:text-black no-underline">
+			{{ .Pre }} {{ i18n .Identifier }}
 		</a>
 		{{ end }}
 	</nav>
