@@ -1,3 +1,0 @@
-+++
-title = "Elegant Hugo theme"
-+++
