@@ -6,7 +6,7 @@
 		{{ .Content }}
 	</div>
 
-	<form class="w-full" method='{{ .Params.method | default "POST" }}' action="{{ .Params.action }}">
+	<form class="w-full" method="POST" data-netlify="true">
 		<div>
 			<input type="text" name="name" placeholder="{{ i18n `name` }}">
 		</div>
