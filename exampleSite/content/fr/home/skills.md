@@ -4,7 +4,7 @@ widget = "bars"  # See https://sourcethemes.com/academic/docs/page-builder/
 weight = 20  # Order that this section will appear.
 
 title = "Compétences"
-subtitle = "J'ai les compétences techniques suivantes :"
+subtitle = "Je maitrise les compétences techniques suivantes :"
 
 # Showcase personal skills or business features.
 # 
