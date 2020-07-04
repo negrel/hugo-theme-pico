@@ -70,10 +70,16 @@ favicon   = '/favicon.png'
 	weight     = 20       
 
 	[[menu.main]]
+	identifier = "about"  # identifier is use for translations
+	pre        = ""       # pre is inserted before the translation (icons, image, etc)
+	url        = "/about" 
+	weight     = 30       
+
+	[[menu.main]]
 	identifier = "contact"   # identifier is use for translations
 	pre        = ""          # pre is inserted before the translation (icons, image, etc)
 	url        = "/#contact" 
-	weight     = 30          
+	weight     = 40          
 
 [markup.highlight]
 guessSyntax        = true  

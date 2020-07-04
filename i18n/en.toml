@@ -40,5 +40,14 @@ other = "Latest post"
 [reading_time]
 other = "{{ .ReadingTime }} min read"
 
-[footer_text]
-other = "Designed by [Alexandre NEGREL](https://github.com/negrel)."
+[home]
+other = "Home"
+
+[about]
+other = "About"
+
+[blog]
+other = "Blog"
+
+[present]
+other = "Present"
