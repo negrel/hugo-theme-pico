@@ -10,7 +10,7 @@
 	},
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^2.3.0",
-		"autoprefixer": "^9.8.1",
+		"autoprefixer": "^9.8.4",
 		"npm-check-updates": "^7.0.1",
 		"postcss": "^7.0.32",
 		"postcss-cli": "^7.1.1",
