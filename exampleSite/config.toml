@@ -11,8 +11,11 @@ customCSS = [
 	"style/style.css",
 	"style/theme.sass",
 ] # Path relative to assets folder
-email     = "example@mail.com"
-favicon   = '/favicon.png'
+
+customJS = ["js/console.js"] # Path relative to assets folder
+
+email   = "example@mail.com"
+favicon = '/favicon.png'
 
 	[[params.social]]
 	alt  = "email icon"

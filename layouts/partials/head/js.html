@@ -1,0 +1,11 @@
+{{/* Google Analytics */}}
+{{ template "_internal/google_analytics.html" . }}
+
+{{ $js_bundle := slice }}
+{{ range site.Params.customJS }}
+{{ $script := resources.Get . }}
+{{ $js_bundle = $js_bundle | append $script }}
+{{ end }}
+
+{{ $js_bundle = $js_bundle | resources.Concat "js/academia.min.js" | fingerprint "md5" }}
+<script src="{{ $js_bundle.RelPermalink }}"></script>
