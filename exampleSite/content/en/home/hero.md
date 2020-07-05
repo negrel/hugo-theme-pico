@@ -20,6 +20,6 @@ hero_media = "/img/portrait.jpg"
 
 +++
 
-# My name is **Alexandre Negrel** and I'm a **software engineer**.
+# My name is **Sponge Bob** and I'm a **software engineer**.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+I live in the ocean most of the time, so I often don't have access to a computer.

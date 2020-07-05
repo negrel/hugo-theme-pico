@@ -3,13 +3,13 @@ widget = "timeline"
 headless = true  # This file represents a page section.
 weight = 30  # Order that this section will appear.
 
-title = "Experience"
+title = "Expérience"
 subtitle = "Ce qui m'a mené à acquérir de l'expérience"
 
 date_format = "02.01.2006"
 
 [[period]]
-  title = "Software Engineer"
+  title = "Ingénieur logiciel"
   subtitle = "[Qwant](https://www.qwant.fr)"
   location = "Paris, France"
   date_start = "2017-01-01"

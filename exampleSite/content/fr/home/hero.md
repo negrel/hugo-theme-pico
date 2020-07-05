@@ -20,6 +20,6 @@ hero_media = "/img/portrait.jpg"
 
 +++
 
-# My name is **Alexandre Negrel** and I'm a **software engineer**.
+# Je m'appelle Bob l'Éponge et je suis ingénieur logiciel.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+Je vis dans l'océan la plupart du temps, donc je n'ai souvent pas accès à un ordinateur.
