@@ -31,7 +31,7 @@ date_format = "02.01.2006"
   description = "Apprendre l'ingénierie logiciel et le fonctionnement des systèmes d'exploitations."
 
 [[period]]
-  title = "Étudent"
+  title = "Étudiant"
   subtitle = "Université Y"
   location = "France"
   date_start = "2015-01-01"
