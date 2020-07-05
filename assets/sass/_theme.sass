@@ -23,7 +23,7 @@ h3
 	@apply text-lg my-2
 
 hr
-	@apply border-grey-700
+	@apply border-t border-grey-300
 
 a
 	@apply underline
@@ -46,13 +46,13 @@ blockquote
 	@apply border-l-8 pl-4 
 
 input, textarea, button
-	@apply outline-none p-2 mb-4 border rounded-md
+	@apply outline-none p-2 mb-4 rounded-md
 
 input:not([type='checkbox']):not([type='button']):not([type='submit']):not([type='reset']):not([type='color']):not([type='file']):not([type='hidden']):not([type='image']):not([type='radio']), textarea
-	@apply w-full
+	@apply w-full border-2
 
 input[type='submit'], input[type='reset']
-	@apply cursor-pointer
+	@apply cursor-pointer px-2
 
 input:focus, textarea:focus, button:hover
-	@apply border-green-300 border-2
+	@apply border-green-300

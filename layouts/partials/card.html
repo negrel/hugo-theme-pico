@@ -2,25 +2,20 @@
 	<a href="{{ .Permalink }}" class="no-underline">
 		<div>
 			{{ with .Params.banner }}
-			<div class="overflow-hidden h-56 relative">
-				<img src="{{ . }}" class="w-full absolute-center">
+			<div class="h-48 overflow-hidden bg-cover bg-center" style="background-image: url('{{ . }}');">
 			</div>
 			{{ end }}
 			<div class="px-4 mt-3 mb-3">
-				<h2 class="m-0 inline-block">{{ .Title }}</h2>
-				<code class="float-right font-sans font-thin">{{ i18n "reading_time" . }}</code>
-				<span class="block no-underline font-thin text-gray-700">{{ dateFormat "02.01.2006" .Date }}</span>
+				<h2 class="m-0 inline-block overflow-ellipsis">{{ .Title | emojify }}</h2>
+				<span class="block no-underline font-thin text-gray-700 -mt-2">
+					{{ dateFormat "02/01/2006" .Date }} &middot; {{ i18n "reading_time" . }}
+				</span>
 			</div>
-			<div class="px-4 mb-3 text-gray-600">
+			<div class="px-4 mb-3 text-gray-600 overflow-ellipsis">
 				{{ with .Params.subtitle }}
-				{{ substr .Plain }}
+				{{ . }}
 				{{ else }}
-				{{ $splitPos := 64 }}
-				{{ if lt (len .Plain) $splitPos}}
-				{{ $splitPos = len .Plain }}
-				{{ end }}
-				{{ $lastChar := substr .Plain (sub $splitPos 1) 1 }}
-				{{ substr .Plain 0 $splitPos }}{{ if and (ne $lastChar ".") (and (ne $lastChar "?") (ne $lastChar "!")) }}...{{ end }}
+				{{ substr .Plain 0 256 }}
 				{{ end }}
 				<a href="{{ .Permalink }}" class="text-xs mt-3 block no-underline">{{ i18n "read_more" }}...</a>
 			</div>
