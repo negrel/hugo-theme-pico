@@ -2,7 +2,7 @@
 title = 'Teneri et aer pilas utque terram tincta'
 tags = ['Node.js', 'HTML5', 'CSS3']
 date = 2020-06-23
-banner = '/svg/lorem2.svg'
+banner = '/img/lorem2.svg'
 +++
 
 ## Raptaeque vertice at regione

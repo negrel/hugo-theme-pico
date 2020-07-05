@@ -2,9 +2,6 @@
 title = "About"
 +++
 
-
-![about image](/img/about.jpeg)
-
 ## Quidque corpore
 
 Lorem markdownum verbis. Ipso et felices curvos, interit fulmina avellere sed
