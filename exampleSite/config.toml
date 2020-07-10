@@ -1,10 +1,10 @@
-baseURL                = '/'     
-defaultContentLanguage = 'en'    
-languageCode           = 'en-us' 
-paginate               = 10      # number of blog post per page
-theme                  = 'pico'  
-themesDir              = '../..' 
-title                  = 'Pico'  
+baseURL                = '/'               
+defaultContentLanguage = 'en'              
+languageCode           = 'en-us'           
+paginate               = 10                # number of blog post per page
+theme                  = 'pico-hugo-theme' 
+themesDir              = '../..'           
+title                  = 'Pico'            
 
 [params]
 customCSS = [
