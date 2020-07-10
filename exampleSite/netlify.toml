@@ -1,5 +1,5 @@
 [build]
-command = "hugo --gc --minify"
+command = "hugo --gc --minify --config config.netlify.toml"
 publish = "public"
 
 [context.production.environment]
