@@ -9,12 +9,12 @@
 </div>
 
 {{ if or (.Prev) (.Next) }}
-<hr class="mb-8 mt-24">
+<hr class="mb-6 mt-24">
 {{ end }}
 
 <div class="flex flex-wrap justify-between items-center">
 	{{ if .Prev }}
-	<div class="{{ if .Next }} w-1/2 {{ end }} overflow-ellipsis pr-1">
+	<div class="{{ if .Next }} w-full sm:w-1/2 {{ end }} mb-1 text-center sm:text-left overflow-ellipsis pr-1">
 		<a class="mr-4" href="{{ .Prev.Permalink }}">
 			<img src="/icons/top_arrow.svg" class="transform -rotate-90 inline-block">
 		</a>
@@ -24,12 +24,9 @@
 	</div>
 	{{ end }}
 
-	{{ if and (.Prev) (.Next) }}
-	<span class="text-gray-600 hidden md:block">|</span>
-	{{ end }}
-
 	{{ if .Next }}
-	<div class="{{ if .Prev }} w-1/2 {{ else }} ml-auto {{ end }} text-right overflow-ellipsis pl-1">
+	<div
+		class="{{ if .Prev }} w-full sm:w-1/2 {{ else }} ml-auto {{ end }} mt-1 text-center sm:text-right overflow-ellipsis pl-1">
 		<a href="{{ .Next.Permalink }}">
 			<span class="underline">{{ .Next.Title }}</span>
 		</a>
@@ -40,6 +37,6 @@
 	{{ end }}
 </div>
 
-<hr class="my-8">
+<hr class="my-6">
 {{ partial "contact_icons.html" . }}
 {{ end }}
