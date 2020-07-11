@@ -11,6 +11,14 @@
 	integrity="{{ $bundle.Data.Integrity }}">
 {{ end }}
 
+{{/* Blog post page syntax highlightning */}}
+{{ if eq .Type "blog" }}
+{{ $syntax := resources.Get "css/syntax.css" }}
+{{ $syntax = $syntax | resources.Minify | fingerprint }}
+<link rel="stylesheet" href="{{ $syntax.RelPermalink }}" crossorigin="anonymous"
+	integrity="{{ $syntax.Data.Integrity }}" media="screen">
+{{ end }}
+
 {{/* Custom CSS & SASS */}}
 {{ range .Site.Params.customCSS -}}
 {{ $style := resources.Get . }}
