@@ -2,13 +2,13 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 description = "Pico is an elegent theme inspired by Medium & The New York Times."
-features    = ["multilingual", ""]
+features    = ["multilingual", "responsive", "tailwindcss", "blog"]
 homepage    = "https://spongebob-pico.netlify.app/"
 license     = "MIT"
 licenselink = "https://github.com/negrel/pico/blob/master/LICENSE"
 min_version = "0.41"
 name        = "Pico"
-tags        = ["blog", "light", "multilingual", "personal", "resume", ""]
+tags        = ["blog", "light", "multilingual", "personal", "resume"]
 
 [author]
 homepage = "https://github.com/negrel"
