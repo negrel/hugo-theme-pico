@@ -7,18 +7,18 @@
 	{{ partial "head/js.html" . }}
 </head>
 
-<body class="min-h-screen bg-white relative pb-16 overflow-x-hidden">
+<body class="min-h-screen bg-white relative pb-24">
 	<div id="top"></div>
 
 	{{- partial "dev/size-indicator.html" . -}}
 	{{- partial "header.html" . -}}
 
-	{{ $mainClass := "w-full px-4 pt-8 mx-auto md:max-w-4xl" }}
+	{{ $mainClass := "" }}
 	{{ if .IsHome }}
-	{{ $mainClass = "w-full px-4 pt-8 mx-auto md:max-w-4xl lg:max-w-5xl xl:max-w-6xl" }}
+	{{ $mainClass = "lg:max-w-5xl xl:max-w-6xl" }}
 	{{ end }}
 
-	<main class="{{ $mainClass }}">
+	<main class="w-full px-4 pt-8 mx-auto md:max-w-4xl overflow-x-hidden {{ $mainClass }}">
 		{{- block "main" . }}{{- end }}
 	</main>
 

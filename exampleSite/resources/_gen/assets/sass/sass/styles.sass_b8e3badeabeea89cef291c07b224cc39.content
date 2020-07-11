@@ -21471,6 +21471,11 @@ html {
   position: relative;  scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100vw
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
