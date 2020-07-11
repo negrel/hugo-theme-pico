@@ -7,20 +7,27 @@
 	</div>
 
 	<form class="w-full" method='{{ .Params.method | default "POST" }}' action="{{ .Params.action }}">
+		{{ range .Params.Inputs }}
 		<div>
-			<input type="text" name="name" placeholder="{{ i18n `name` }}">
+			{{ if eq .type "textarea" }}
+			<textarea rows="5" {{ printf "name=%q" .name | safeHTMLAttr }}
+				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }}></textarea>
+			{{ else }}
+			<input {{ printf "type=%q" .type | safeHTMLAttr }} {{ printf "pattern=%q" .pattern | safeHTMLAttr }}
+				{{ printf "name=%q" .name | safeHTMLAttr }} {{ printf "placeholder=%q" .placeholder | safeHTMLAttr }}
+				{{ if .required }} required {{ end }}>
+			{{ end }}
 		</div>
-		<div>
-			<input type="email" name="email" placeholder="Email" required>
-		</div>
-		<div>
-			<textarea name="message" placeholder="{{ i18n `your_message` }}..." rows="5" required></textarea>
-		</div>
+		{{ end }}
+
+		{{ if .Params.useEmail }}
 		{{ with .Site.Params.email }}
 		<a class="bg-gray-200 px-3 py-2 rounded-md mr-2 no-underline inline-block" href="mailto:{{ . }}">
 			{{ i18n "contact_email" }}
 		</a>
 		{{ end }}
+		{{ end }}
+
 		<div class="float-right">
 			<input type="reset" class="bg-gray-200 mr-2" value='{{ i18n "cancel" }}' />
 			<input type="submit" class="bg-black text-white" value='{{ i18n "submit" }}' />
