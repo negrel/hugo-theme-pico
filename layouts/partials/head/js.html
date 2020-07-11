@@ -7,5 +7,6 @@
 {{ $js_bundle = $js_bundle | append $script }}
 {{ end }}
 
-{{ $js_bundle = $js_bundle | resources.Concat "js/academia.min.js" | fingerprint "md5" }}
-<script src="{{ $js_bundle.RelPermalink }}"></script>
+{{ $js_bundle = $js_bundle | resources.Concat "js/pico.min.js" | fingerprint "md5" }}
+<script src="{{ $js_bundle.RelPermalink }}" intergrity="{{$js_bundle.Data.Integrity }}"
+	crossorigin="anonymous"></script>
