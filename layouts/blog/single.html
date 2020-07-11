@@ -12,28 +12,28 @@
 <hr class="mb-8 mt-24">
 {{ end }}
 
-<div class="flex justify-between items-center">
+<div class="flex flex-wrap justify-between items-center">
 	{{ if .Prev }}
-	<div class="flex-1">
-		<a class="no-underline mr-4" href="{{ .Prev.Permalink }}">
+	<div class="{{ if .Next }} w-1/2 {{ end }} overflow-ellipsis pr-1">
+		<a class="mr-4" href="{{ .Prev.Permalink }}">
 			<img src="/icons/top_arrow.svg" class="transform -rotate-90 inline-block">
 		</a>
 		<a href="{{ .Prev.Permalink }}">
-			<span class="">{{ .Prev.Title }}</span>
+			<span class="underline">{{ .Prev.Title }}</span>
 		</a>
 	</div>
 	{{ end }}
 
 	{{ if and (.Prev) (.Next) }}
-	<span class="text-gray-600">|</span>
+	<span class="text-gray-600 hidden md:block">|</span>
 	{{ end }}
 
 	{{ if .Next }}
-	<div class="flex-1 text-right">
+	<div class="{{ if .Prev }} w-1/2 {{ else }} ml-auto {{ end }} text-right overflow-ellipsis pl-1">
 		<a href="{{ .Next.Permalink }}">
-			<span class="">{{ .Next.Title }}</span>
+			<span class="underline">{{ .Next.Title }}</span>
 		</a>
-		<a class="no-underline ml-4" href="{{ .Next.Permalink }}">
+		<a class="ml-4" href="{{ .Next.Permalink }}">
 			<img src="/icons/top_arrow.svg" class="transform rotate-90 inline-block">
 		</a>
 	</div>
