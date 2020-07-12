@@ -1,9 +1,10 @@
 <section id="hero" class="mt-8 mx-auto flex flex-wrap items-center">
-	<div class="p-8 md:w-1/2 text-center">
+	<div
+		class="mx-auto p-8 text-center md:text-left {{ with .Params.hero_media }} md:w-1/2 {{ else }} md:w-3/4 {{ end }}">
 		<div>
 			{{ .Content }}
 		</div>
-		<div class="mx-auto mt-8 mb-8 md:mb-0 flex justify-center">
+		<div class="mx-auto mt-8 mb-8 md:mb-0 flex justify-center md:justify-start">
 			{{ range .Params.btn }}
 			{{ $class := "border border-green-400 hover:text-white" }}
 			{{ if .primary }}
@@ -12,7 +13,7 @@
 
 			<a href="{{ .url | relLangURL }}" class="no-underline">
 				<div
-					class="px-6 py-2 mr-6 rounded-sm text-center hover:bg-green-500 active:bg-green-600 transition duration-300 ease-in-out {{ $class }}">
+					class="px-4 py-2 mx-3 rounded-sm text-center hover:bg-green-500 active:bg-green-600 transition duration-300 ease-in-out {{ $class }}">
 					{{ .label }}
 				</div>
 			</a>
