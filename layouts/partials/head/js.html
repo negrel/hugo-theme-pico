@@ -7,6 +7,10 @@
 {{ $js_bundle = $js_bundle | append $script }}
 {{ end }}
 
+{{ if gt (len $js_bundle) 0 }}
+
 {{ $js_bundle = $js_bundle | resources.Concat "js/pico.min.js" | fingerprint "md5" }}
 <script src="{{ $js_bundle.RelPermalink }}" intergrity="{{$js_bundle.Data.Integrity }}"
 	crossorigin="anonymous"></script>
+
+{{ end }}

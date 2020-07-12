@@ -20,6 +20,6 @@ hero_media = "/img/portrait.jpg"
 
 +++
 
-# Je m'appelle Bob l'Éponge et je suis ingénieur logiciel.
+# Je m'appelle **Bob l'Éponge** et je suis **ingénieur logiciel**.
 
 Je vis dans l'océan la plupart du temps, donc je n'ai souvent pas accès à un ordinateur.
