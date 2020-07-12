@@ -12,6 +12,6 @@
 {{ end }}
 
 <a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }} target="{{ $target }}"
-	class="{{ $lineBreak }}">
+	class="underline {{ $lineBreak }}">
 	{{ .Text | safeHTML }}
 </a>
