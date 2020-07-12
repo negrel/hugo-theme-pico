@@ -18,7 +18,7 @@
 	{{ $mainClass = "lg:max-w-5xl xl:max-w-6xl" }}
 	{{ end }}
 
-	<main class="w-full px-4 pt-8 mx-auto md:max-w-4xl overflow-x-hidden {{ $mainClass }}">
+	<main class="w-full px-4 pt-8 mx-auto md:max-w-4xl overflow-x-hidden md:overflow-visible {{ $mainClass }}">
 		{{- block "main" . }}{{- end }}
 	</main>
 

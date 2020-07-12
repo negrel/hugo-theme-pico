@@ -1,9 +1,27 @@
-const inset = require('./generators/position');
+const generator = require('./generator');
+
+const inset = generator({
+	'0': '0rem',
+	'full': '100%',
+}, {
+	std: true,
+	negative: true,
+	percentage: true,
+}),
+	maxWidth = generator({
+		'0': '0rem',
+		'screen': '100vw'
+	}, {
+		std: true,
+		negative: true,
+		percentage: true,
+	});
 
 module.exports = {
 	theme: {
 		inset,
 		extend: {
+			maxWidth,
 			fontFamily: {
 				'serif': ['Spectral', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
 				'charter': ['charter', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
