@@ -1,5 +1,6 @@
 baseURL                = '/'               
 defaultContentLanguage = 'en'              
+enableEmoji            = true              
 languageCode           = 'en-us'           
 paginate               = 10                # number of blog post per page
 theme                  = 'pico-hugo-theme' 

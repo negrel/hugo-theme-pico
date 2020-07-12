@@ -16,10 +16,10 @@ subtitle = "Read about my latest projects"
 	count = 5
 
 	[content.filters]
-		tag = "css3"
+		tag = "bite"
 		category = ""
 		publication_type = ""
 		exclude_featured = false
 +++
 
-There are no posts at the moment.
+:disappointed: There are no posts at the moment. :disappointed:

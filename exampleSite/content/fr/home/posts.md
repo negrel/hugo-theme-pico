@@ -22,4 +22,4 @@ subtitle = "Lisez à propos de mes derniers projets"
     exclude_featured = false
 +++
 
-Il n'y a aucun post pour le moment.
+:disappointed: Il n'y a aucun post pour le moment. :disappointed:
