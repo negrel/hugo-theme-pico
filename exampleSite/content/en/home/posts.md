@@ -21,3 +21,5 @@ subtitle = "Read about my latest projects"
 		publication_type = ""
 		exclude_featured = false
 +++
+
+There are no posts at the moment.
