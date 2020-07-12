@@ -16,7 +16,7 @@ subtitle = "Read about my latest projects"
 	count = 5
 
 	[content.filters]
-		tag = "bite"
+		tag = "css3"
 		category = ""
 		publication_type = ""
 		exclude_featured = false

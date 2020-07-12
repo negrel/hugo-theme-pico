@@ -1,5 +1,5 @@
 <section id="hero" class="mt-8 mx-auto flex flex-wrap items-center">
-	<div class="p-8 md:w-1/2 text-center md:text-left">
+	<div class="p-8 md:w-1/2 text-center">
 		<div>
 			{{ .Content }}
 		</div>
@@ -12,7 +12,7 @@
 
 			<a href="{{ .url | relLangURL }}" class="no-underline">
 				<div
-					class="px-6 py-2 mr-6 rounded-sm text-center whitespace-no-wrap hover:bg-green-500 active:bg-green-600 transition duration-300 ease-in-out {{ $class }}">
+					class="px-6 py-2 mr-6 rounded-sm text-center hover:bg-green-500 active:bg-green-600 transition duration-300 ease-in-out {{ $class }}">
 					{{ .label }}
 				</div>
 			</a>
