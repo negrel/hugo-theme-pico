@@ -18,12 +18,12 @@ subtitle = "I am really good at the following technical skills"
   percent = "85%"
 
 [[bar]]
-	icon = "/img/javascript.png"
+	icon = "/icons/javascript.png"
   name = "Javascript"
   percent = "90%"
 
 [[bar]]
-	icon = "/img/java.png"
+	icon = "/icons/java.png"
   name = "Java"
   percent = "60%"
 +++
