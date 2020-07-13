@@ -1,6 +1,7 @@
 <div class="mb-4 border border-gray-300 rounded-md overflow-hidden">
-	<a href="{{ .Permalink }}" class="no-underline">
-		<div>
+	<a href="{{ .Permalink }}" class="no-underline block">
+		{{/* A span is used instead a div for accessibiliy, <a> tag can't wrap div elements */}}
+		<span class="block">
 			{{ with .Params.banner }}
 			<div class="h-48 overflow-hidden bg-cover bg-center" style="background-image: url('{{ . }}');">
 			</div>
@@ -17,8 +18,8 @@
 				{{ else }}
 				{{ substr .Plain 0 256 }}
 				{{ end }}
-				<a href="{{ .Permalink }}" class="text-xs mt-3 block no-underline">{{ i18n "read_more" }}...</a>
+				<span class="text-xs mt-3 block no-underline">{{ i18n "read_more" }}...</span>
 			</div>
-		</div>
+		</span>
 	</a>
 </div>
