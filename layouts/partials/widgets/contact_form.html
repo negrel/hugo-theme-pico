@@ -6,18 +6,43 @@
 		{{ .Content }}
 	</div>
 
-	<form class="w-full" method='{{ .Params.method | default "POST" }}' action="{{ .Params.action }}"
+	<form class="w-full relative" method='{{ .Params.method | default "POST" }}' action="{{ .Params.action }}"
 		{{ if .Params.netlify }} data-netlify="true" {{ end }}>
 		{{ range .Params.Inputs }}
+
+		{{ $pattern := "" }}
+		{{ with .pattern }}
+		{{ $pattern = printf "pattern=%q" . | safeHTMLAttr}}
+		{{ end }}
+
+		{{ $minlength := "" }}
+		{{ $maxlength := "" }}
+		{{ with .minlength }}
+		{{ $minlength = printf "minlength=%q" . | safeHTMLAttr}}
+		{{ end }}
+		{{ with .maxlength }}
+		{{ $maxlength = printf "maxlength=%q" . | safeHTMLAttr}}
+		{{ end }}
+
+
 		<div>
-			<label class="hidden">{{ .name | title }}</label>
+			{{ if .label }}
+			<div class="my-2 font-bold text-lg">
+				<label class="" for="{{ .name }}">{{ .label }}
+					{{ if .required }}
+					<span class="text-red-500 font-normal">*</span>
+					{{ end }}
+				</label>
+			</div>
+			{{ end }}
 			{{ if eq .type "textarea" }}
-			<textarea rows="5" {{ printf "name=%q" .name | safeHTMLAttr }}
-				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }}></textarea>
+			<textarea rows="5" {{ printf "name=%q" .name | safeHTMLAttr }} {{ printf "id=%q" .name | safeHTMLAttr }}
+				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }} {{ $minlength }} {{ $maxlength }}></textarea>
 			{{ else }}
-			<input {{ printf "type=%q" .type | safeHTMLAttr }} {{ printf "pattern=%q" .pattern | safeHTMLAttr }}
-				{{ printf "name=%q" .name | safeHTMLAttr }} {{ printf "placeholder=%q" .placeholder | safeHTMLAttr }}
-				{{ if .required }} required {{ end }}>
+			{{ $type := .type | default "text" }}
+			<input {{ printf "type=%q" .type | safeHTMLAttr }} {{ printf "name=%q" .name | safeHTMLAttr }}
+				{{ printf "id=%q" .name | safeHTMLAttr }} {{ printf "placeholder=%q" .placeholder | safeHTMLAttr }}
+				{{ $pattern }} {{ if .required }} required {{ end }}>
 			{{ end }}
 		</div>
 		{{ end }}

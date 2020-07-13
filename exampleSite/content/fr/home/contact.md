@@ -16,22 +16,27 @@ title = "Contact"
 useEmail = true
 
 [[inputs]]
+label = "Votre nom"
 type = "text"
+minlength = "3"
 name = "name"
 pattern = "[a-zA-Z]"
 placeholder = "Nom"
 
 [[inputs]]
+label = "Votre email"
 type = "email"
 name = "email"
-pattern = ""
+# pattern = ""
 placeholder = "Email"
 required = true
 
+# Textarea works same as input but doesn't support pattern matching
 [[inputs]]
+label = "Votre message (minimum 10 lettres)"
 type = "textarea"
+minlength = "10"
 name = "message"
-pattern = ""
 placeholder = "Votre message..."
 required = true
 

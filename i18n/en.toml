@@ -51,3 +51,6 @@ other = "Blog"
 
 [present]
 other = "Present"
+
+[required_fields]
+other = "Required fields"
