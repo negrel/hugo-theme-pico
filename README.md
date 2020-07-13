@@ -10,6 +10,9 @@
 
 This theme aims to be minimalist, readable, responsive, light and beautiful. Inspired by **Medium** and **The New York Times**, Pico try to provide the best experience for the reader while having an awesome design. It can be configured as a single page, or as a full-featured site with multiple sections. It is multilingual, responsive, and includes a light and *dark theme* (*soon*).
 
+You can check the [**example site**](https://sponge-bob.netlify.app/).
+![pico example screenshot](https://github.com/negrel/hugo-theme-pico/raw/master/.github/banner.jpg)
+
 ## Preview the theme
 Pico ships with an fully configured example site. For a quick preview:
 
@@ -29,7 +32,7 @@ Some [NPM](https://npmjs.org) packages :
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [@fullhuman/postcss-purgecss](https://www.npmjs.com/package/@fullhuman/postcss-purgecss)
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss) https://tailwindcss.com/
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss)
 
 Learn how to install and use npm [here](https://www.npmjs.com/get-npm).
 
