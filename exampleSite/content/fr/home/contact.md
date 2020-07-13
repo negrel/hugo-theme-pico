@@ -1,12 +1,15 @@
 +++
-# For Netlify form
-# widget = "contact_form_netlify"
-
 # Standard form
 widget = "contact_form"
 action = "/contact_handler.php"
 method = "GET" # Default is POST
 title = "Contact" 
+
+# For Netlify form
+# Comment action and method params and uncomment
+# the following line.
+#
+netlify = true
 
 # Add a contact via email button if your email
 # is configured in the config file of your website.

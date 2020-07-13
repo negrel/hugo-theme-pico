@@ -6,9 +6,11 @@
 		{{ .Content }}
 	</div>
 
-	<form class="w-full" method='{{ .Params.method | default "POST" }}' action="{{ .Params.action }}">
+	<form class="w-full" method='{{ .Params.method | default "POST" }}' action="{{ .Params.action }}"
+		{{ if .Params.netlify }} data-netlify="true" {{ end }}>
 		{{ range .Params.Inputs }}
 		<div>
+			<label class="hidden">{{ .name | title }}</label>
 			{{ if eq .type "textarea" }}
 			<textarea rows="5" {{ printf "name=%q" .name | safeHTMLAttr }}
 				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }}></textarea>
