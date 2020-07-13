@@ -8,8 +8,7 @@
 	"keywords": [],
 	"author": "Alexandre Negrel",
 	"license": "MIT",
-	"dependencies": {},
-	"devDependencies": {
+	"dependencies": {
 		"@fullhuman/postcss-purgecss": "^2.3.0",
 		"autoprefixer": "^9.8.5",
 		"npm-check-updates": "^7.0.1",
