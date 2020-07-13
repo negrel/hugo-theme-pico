@@ -1,7 +1,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name=viewport content="width=device-width, initial-scale=1">
-{{ if $.Site.Params.description }}
-<meta name="description" content="{{ .Description }}" />
+{{ with .Description }}
+<meta name="description" content="{{ . }}" />
+{{ else }}
+
+{{ with $.Site.Params.description }}
+<meta name="description" content="{{ . }}" />
+{{ end }}
+
 {{ end }}
 <title>
 	{{ .Site.Title }}

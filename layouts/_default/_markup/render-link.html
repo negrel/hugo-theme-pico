@@ -5,13 +5,7 @@
 {{ $lineBreak = "break-words" }}
 {{ end }}
 
-{{/* Blank page if not a page of the website */}}
-{{ $target := "_self" }}
-{{ if strings.HasPrefix .Destination "http" }}
-{{ $target = "_blank" }}
-{{ end }}
-
-<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }} target="{{ $target }}"
-	class="underline {{ $lineBreak }}">
+<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }} class="underline {{ $lineBreak }}"
+	{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener" {{ end }}>
 	{{ .Text | safeHTML }}
 </a>

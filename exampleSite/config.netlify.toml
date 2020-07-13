@@ -12,11 +12,13 @@ customCSS = [
 	"style/style.css",
 	"style/theme.sass",
 ] # Path relative to assets folder
-
-customJS = ["js/console.js"] # Path relative to assets folder
-
-email   = "mail@example.com"
-favicon = '/favicon.png'
+customJS  = ["js/console.js"] # Path relative to assets folder
+# Homepage description
+# For blog page description you can overwrite it 
+# in the front matter
+description = "Sponge bob website"
+email       = "mail@example.com"
+favicon     = '/favicon.png'
 
 	[[params.social]]
 	alt  = "email icon"
