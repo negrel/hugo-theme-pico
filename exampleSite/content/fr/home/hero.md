@@ -4,7 +4,7 @@ widget = "hero"
 weight = 10  # Order that this section will appear.
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "/img/portrait.jpg"
+hero_media = "/img/portrait.webp"
 
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.

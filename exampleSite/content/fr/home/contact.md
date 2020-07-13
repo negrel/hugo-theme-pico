@@ -9,7 +9,7 @@ title = "Contact"
 # Comment action and method params and uncomment
 # the following line.
 #
-netlify = true
+# netlify = true
 
 # Add a contact via email button if your email
 # is configured in the config file of your website.

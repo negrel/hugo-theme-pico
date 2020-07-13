@@ -13,17 +13,17 @@ subtitle = "I am really good at the following technical skills"
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
 [[bar]]
-	icon = "/img/gopher.png"
+	icon = "/img/gopher.webp"
   name = "Golang"
   percent = "85%"
 
 [[bar]]
-	icon = "/icons/javascript.png"
+	icon = "/icons/javascript.webp"
   name = "Javascript"
   percent = "90%"
 
 [[bar]]
-	icon = "/icons/java.png"
+	icon = "/icons/java.webp"
   name = "Java"
   percent = "60%"
 +++
