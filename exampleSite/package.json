@@ -1,0 +1,21 @@
+{
+	"name": "boilerplate-pico",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Alexandre Negrel",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^2.3.0",
+		"autoprefixer": "^9.8.5",
+		"npm-check-updates": "^7.0.1",
+		"postcss": "^7.0.32",
+		"postcss-cli": "^7.1.1",
+		"postcss-import": "^12.0.1",
+		"tailwindcss": "^1.4.6"
+	}
+}

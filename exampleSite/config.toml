@@ -1,0 +1,119 @@
+baseURL                = '/'
+defaultContentLanguage = 'en'
+# Emoji in markdown files
+enableEmoji  = true
+languageCode = 'en-us'
+# Number of blog post per page
+paginate = 10
+theme    = 'pico'
+# Title of the website is used for the meta tag title
+# and the square icon (except favicon)
+title = 'Sponge-Bob'
+
+[params]
+customCSS = [
+	"style/style.css",
+	"style/theme.sass",
+] # Path relative to assets folder
+customJS  = ["js/console.js"] # Path relative to assets folder
+# Homepage description
+# For blog page description you can overwrite it 
+# in the front matter
+description = "Boilerplate website"
+email       = "mail@example.com"
+favicon     = '/favicon.png'
+
+# Social parameters for contact_icons widget
+	[[params.social]]
+	alt  = "email icon"
+	icon = "/icons/email.svg"
+	name = "email"
+	url  = "mailto:mail@example.com"
+
+	[[params.social]]
+	alt   = "github icon"
+	blank = true
+	icon  = "/icons/github.svg"
+	name  = "github"
+	url   = "https://github.com/"
+
+	[[params.social]]
+	alt   = "medium icon"
+	blank = true
+	icon  = "/icons/medium.svg"
+	name  = "medium"
+	url   = "https://medium.com/"
+
+	[[params.social]]
+	alt   = "stack-overflow icon"
+	blank = true
+	icon  = "/icons/stack-overflow.svg"
+	name  = "stack-overflow"
+	url   = "https://stackoverflow.com/"
+
+	[[params.social]]
+	alt   = "twitter icon"
+	blank = true
+	icon  = "/icons/twitter.svg"
+	name  = "twitter"
+	url   = "https://twitter.com/"
+
+	[[params.social]]
+	alt   = "facebook icon"
+	blank = true
+	icon  = "/icons/facebook.svg"
+	name  = "facebook"
+	url   = "https://facebook.com/"
+
+	# Navigation bar
+[menu]
+
+	[[menu.main]]
+	identifier = "home" # identifier is use for translations
+	pre        = ""     # pre is inserted before the translation (icons, image, etc)
+	url        = "/"    
+	weight     = 10     
+
+	[[menu.main]]
+	identifier = "blog"   # identifier is use for translations
+	pre        = ""       # pre is inserted before the translation (icons, image, etc)
+	url        = "/blog/" 
+	weight     = 20       
+
+	[[menu.main]]
+	identifier = "about"  # identifier is use for translations
+	pre        = ""       # pre is inserted before the translation (icons, image, etc)
+	url        = "/about" 
+	weight     = 30       
+
+	[[menu.main]]
+	identifier = "contact"   # identifier is use for translations
+	pre        = ""          # pre is inserted before the translation (icons, image, etc)
+	url        = "/#contact" 
+	weight     = 40          
+
+	# Syntax highlightning
+[markup.highlight]
+guessSyntax        = true  
+lineNumbersInTable = true  
+noClasses          = false # Set to false to use the Pico default theme.
+tabWidth           = 2     
+
+[taxonomies]
+category = "categories"
+tag      = "tags"
+
+# Translation
+# English and French are supported but you can contribute
+# by adding translation to i18n/ folder.
+[languages.en]
+contentDir   = 'content/en'
+languageCode = 'en'
+languageName = 'English'
+weight       = 0
+
+[languages.fr]
+contentDir   = 'content/fr'
+languageCode = 'fr'
+languageName = 'Français'
+weight       = 2
