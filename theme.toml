@@ -11,8 +11,8 @@ features    = [
 ]
 homepage    = "https://spongebob-pico.netlify.app/"
 license     = "MIT"
-licenselink = "https://github.com/negrel/pico/blob/master/LICENSE"
-min_version = "0.41"
+licenselink = "https://github.com/negrel/hugo-theme-pico/blob/master/LICENSE"
+min_version = "0.72"
 name        = "Pico"
 tags        = [
 	"blog",

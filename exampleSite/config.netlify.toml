@@ -1,5 +1,6 @@
 baseURL                = '/'     
 defaultContentLanguage = 'en'    
+enableEmoji            = true    
 languageCode           = 'en-us' 
 paginate               = 10      # number of blog post per page
 theme                  = 'repo'  # Netlify clone the theme in a "repo" folder
@@ -14,42 +15,42 @@ customCSS = [
 
 customJS = ["js/console.js"] # Path relative to assets folder
 
-email   = "example@mail.com"
+email   = "mail@example.com"
 favicon = '/favicon.png'
 
 	[[params.social]]
 	alt  = "email icon"
 	icon = "/icons/email.svg"
 	name = "email"
-	url  = "mailto:example@mail.com"
+	url  = "mailto:mail@example.com"
 
 	[[params.social]]
 	alt   = "github icon"
 	blank = true
 	icon  = "/icons/github.svg"
 	name  = "github"
-	url   = "https://github.com/negrel/"
+	url   = "https://github.com/"
 
 	[[params.social]]
 	alt   = "medium icon"
 	blank = true
 	icon  = "/icons/medium.svg"
 	name  = "medium"
-	url   = "https://medium.com/@negrel/"
+	url   = "https://medium.com/"
 
 	[[params.social]]
 	alt   = "stack-overflow icon"
 	blank = true
 	icon  = "/icons/stack-overflow.svg"
 	name  = "stack-overflow"
-	url   = "https://stackoverflow.com/users/11627098/negrel"
+	url   = "https://stackoverflow.com/"
 
 	[[params.social]]
 	alt   = "twitter icon"
 	blank = true
 	icon  = "/icons/twitter.svg"
 	name  = "twitter"
-	url   = "https://twitter.com/Twitter"
+	url   = "https://twitter.com/"
 
 	[[params.social]]
 	alt   = "facebook icon"
