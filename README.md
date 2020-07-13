@@ -17,14 +17,14 @@ Features :
 - Multilingual - supports side-by-side content in different language versions
 - Syntax highlighting (one dark theme)
 - Styled Markdown throughout, including post titles
-- Custom index page sections from Markdown files
+- Customizable pages with widget or [TailwindCSS](https://tailwindcss.com/)
 - Straightforward customization via config.toml
 - Projects and Blog sections
-- Light, bundle css is purged and minified thanks to PostCSS
+- Light, CSS bundle is purged and minified thanks to PostCSS
 
 Developer-friendly :
 - Sass files included with instant compiling to CSS thanks to Hugo Pipes and PostCSS
-- TailwindCSS for rapidly building custom design
+- [TailwindCSS](https://tailwindcss.com/) for rapidly building custom design
 
 ## Preview the theme
 Pico ships with an fully configured example site. For a quick preview:
@@ -52,13 +52,19 @@ Learn how to install and use npm [here](https://www.npmjs.com/get-npm).
 ### Get the theme
 
 ```
-# Create the base file for our static site
-hugo new site your_site_name
+# Clone the boilerplate
+git clone https://github.com/negrel/hugo-boilerplate-pico.git my_website
 
-cd your_site_name
+cd my_website
 
-# Get the theme
-git clone https://github.com/negrel/pico-hugo-theme themes/pico
+# Install NPM dependencies
+npm install
+
+# Update node modules and Pico submodule
+./update.sh
+
+# Start the dev server
+hugo server
 ```
 
 
