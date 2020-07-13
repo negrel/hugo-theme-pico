@@ -13,6 +13,19 @@ This theme aims to be minimalist, readable, responsive, light and beautiful. Ins
 You can check the [**example site**](https://sponge-bob.netlify.app/).
 ![pico example screenshot](https://github.com/negrel/hugo-theme-pico/raw/master/.github/banner.jpg)
 
+Features :
+- Multilingual - supports side-by-side content in different language versions
+- Syntax highlighting (one dark theme)
+- Styled Markdown throughout, including post titles
+- Custom index page sections from Markdown files
+- Straightforward customization via config.toml
+- Projects and Blog sections
+- Light, bundle css is purged and minified thanks to PostCSS
+
+Developer-friendly :
+- Sass files included with instant compiling to CSS thanks to Hugo Pipes and PostCSS
+- TailwindCSS for rapidly building custom design
+
 ## Preview the theme
 Pico ships with an fully configured example site. For a quick preview:
 
