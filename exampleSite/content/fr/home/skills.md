@@ -6,4 +6,26 @@ weight = 20  # Order that this section will appear.
 title = "Compétences"
 subtitle = "Je maitrise les compétences techniques suivantes :"
 
+[[bar]]
+	icon = "/icons/precision.svg"
+	name = "Précision"
+	percent = "95%"
+
+[[bar]]
+	icon = "/icons/heat.svg"
+	name = "Contrôle de la cuisson"
+	percent = "90%"
+
+
+[[bar]]
+	icon = "/icons/chicken.svg"
+	name = "Qualité des produits"
+	percent = "87%"
+
+
+[[bar]]
+	icon = "/icons/presentation.svg"
+	name = "Présentation"
+	percent = "75%"
+
 +++
