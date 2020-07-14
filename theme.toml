@@ -9,7 +9,7 @@ features    = [
 	"blog",
 	"syntax highlightning",
 ]
-homepage    = "https://spongebob-pico.netlify.app/"
+homepage    = "https://sponge-bob.netlify.app/"
 license     = "MIT"
 licenselink = "https://github.com/negrel/hugo-theme-pico/blob/master/LICENSE"
 min_version = "0.72"
