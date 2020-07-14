@@ -1,4 +1,4 @@
-baseURL                = '/'
+baseURL                = 'https://example.com/'
 defaultContentLanguage = 'en'
 # Emoji in markdown files
 enableEmoji  = true
