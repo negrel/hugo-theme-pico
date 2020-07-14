@@ -52,21 +52,43 @@ Learn how to install and use npm [here](https://www.npmjs.com/get-npm).
 ### Get the theme
 
 ```
-# Clone the boilerplate
-git clone https://github.com/negrel/hugo-boilerplate-pico.git my_website
+# Clone the repository
+git clone https://github.com/negrel/hugo-theme-pico.git pico
 
+# Copy the example site
+cp -r pico/exampleSite/* my_website
+
+# You can delete the cloned repository
+rm -rf pico
+
+# Navigate to your website
 cd my_website
 
-# Install NPM dependencies
+# Install the node modules and the theme via the script
+./setup.sh
+# OR manually
+# Installing node modules
 npm install
-
-# Update node modules and Pico submodule
-./update.sh
+# Adding the theme as a submodule (better maintenance than a clone)
+# NOTE: my_website/ must be a git repository
+git submodule add -f https://github.com/negrel/hugo-theme-pico.git ./themes/pico
 
 # Start the dev server
 hugo server
 ```
 
+Your website is running :smile:, you can start editing content files.
+
+### Multilingual
+Pico currently ships with support for 2 languages (fr, en). Contributions for other language translations are welcome.
+To create a new language translation, add the .toml file to the i18n/ folder. See the existing files for the necessary fields.
+See the [hugo documentation](https://gohugo.io/content-management/multilingual/) for more details.
+
+### Menu
+Pico contains a default menu. If you want to override this, you can do so by editing the menu.main in config.toml.
+
+### Google Analytics
+Set googleAnalytics in config.toml to activate Hugo's internal [Google Analytics template](https://gohugo.io/templates/internal/#google-analytics).
 
 ### Contributing
 If you want to contribute to Pico to add a feature or improve the code contact me at [negrel.dev@protonmail.com](mailto:negrel.dev@protonmail.com), open an [issue](https://github.com/negrel/pico-hugo-theme/issues) or make a [pull request](https://github.com/negrel/pico-hugo-theme/pulls).
