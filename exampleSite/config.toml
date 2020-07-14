@@ -24,75 +24,69 @@ email       = "mail@example.com"
 favicon     = '/favicon.png'
 
 # Social parameters for contact_icons widget
-	[[params.social]]
-	alt  = "email icon"
-	icon = "/icons/email.svg"
-	name = "email"
-	url  = "mailto:mail@example.com"
+[[params.social]]
+alt  = "email icon"
+icon = "/icons/email.svg"
+name = "email"
+url  = "mailto:mail@example.com"
 
-	[[params.social]]
-	alt   = "github icon"
-	blank = true
-	icon  = "/icons/github.svg"
-	name  = "github"
-	url   = "https://github.com/"
+[[params.social]]
+alt   = "github icon"
+blank = true
+icon  = "/icons/github.svg"
+name  = "github"
+url   = "https://github.com/"
 
-	[[params.social]]
-	alt   = "medium icon"
-	blank = true
-	icon  = "/icons/medium.svg"
-	name  = "medium"
-	url   = "https://medium.com/"
+[[params.social]]
+alt   = "medium icon"
+blank = true
+icon  = "/icons/medium.svg"
+name  = "medium"
+url   = "https://medium.com/"
 
-	[[params.social]]
-	alt   = "stack-overflow icon"
-	blank = true
-	icon  = "/icons/stack-overflow.svg"
-	name  = "stack-overflow"
-	url   = "https://stackoverflow.com/"
+[[params.social]]
+alt   = "stack-overflow icon"
+blank = true
+icon  = "/icons/stack-overflow.svg"
+name  = "stack-overflow"
+url   = "https://stackoverflow.com/"
 
-	[[params.social]]
-	alt   = "twitter icon"
-	blank = true
-	icon  = "/icons/twitter.svg"
-	name  = "twitter"
-	url   = "https://twitter.com/"
+[[params.social]]
+alt   = "twitter icon"
+blank = true
+icon  = "/icons/twitter.svg"
+name  = "twitter"
+url   = "https://twitter.com/"
 
-	[[params.social]]
-	alt   = "facebook icon"
-	blank = true
-	icon  = "/icons/facebook.svg"
-	name  = "facebook"
-	url   = "https://facebook.com/"
+[[params.social]]
+alt   = "facebook icon"
+blank = true
+icon  = "/icons/facebook.svg"
+name  = "facebook"
+url   = "https://facebook.com/"
 
-	# Navigation bar
+# Navigation bar
 [menu]
 
-	[[menu.main]]
-	identifier = "home" # identifier is use for translations
-	pre        = ""     # pre is inserted before the translation (icons, image, etc)
-	url        = "/"    
-	weight     = 10     
+[[menu.main]]
+identifier = "home" # identifier is use for translations
+pre        = ""     # pre is inserted before the translation (icons, image, etc)
+url        = "/"    
+weight     = 10     
 
-	[[menu.main]]
-	identifier = "blog"   # identifier is use for translations
-	pre        = ""       # pre is inserted before the translation (icons, image, etc)
-	url        = "/blog/" 
-	weight     = 20       
+[[menu.main]]
+identifier = "blog"   # identifier is use for translations
+pre        = ""       # pre is inserted before the translation (icons, image, etc)
+url        = "/blog/" 
+weight     = 20       
 
-	[[menu.main]]
-	identifier = "about"  # identifier is use for translations
-	pre        = ""       # pre is inserted before the translation (icons, image, etc)
-	url        = "/about" 
-	weight     = 30       
+[[menu.main]]
+identifier = "contact"   # identifier is use for translations
+pre        = ""          # pre is inserted before the translation (icons, image, etc)
+url        = "/#contact" 
+weight     = 30          
 
-	[[menu.main]]
-	identifier = "contact"   # identifier is use for translations
-	pre        = ""          # pre is inserted before the translation (icons, image, etc)
-	url        = "/#contact" 
-	weight     = 40          
-
-	# Syntax highlightning
+# Syntax highlightning
 [markup.highlight]
 guessSyntax        = true  
 lineNumbersInTable = true  
