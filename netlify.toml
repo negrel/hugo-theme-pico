@@ -1,7 +1,6 @@
 [build]
-base    = "exampleSite/"
-command = "cd exampleSite && hugo --gc --minify	-t repo --themesDir ../.."
-publish = "public/"
+command = "cd exampleSite && hugo --gc --minify -t repo --themesDir ../.."
+publish = "exampleSite/public/"
 
 [context.production.environment]
 HUGO_ENABLEGITINFO = "true"
