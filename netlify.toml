@@ -1,17 +1,17 @@
 [build]
-command = "cd exampleSite && hugo --gc --minify -t repo --themesDir ../.."
+command = "cd exampleSite && hugo --gc --minify -t repo --themesDir ../.. -b https://sponge-bob.netlify.app/"
 publish = "exampleSite/public/"
 
 [context.production.environment]
 HUGO_ENABLEGITINFO = "true"
-HUGO_ENV           = "production"
-HUGO_VERSION       = "0.73.0"
+HUGO_ENV = "production"
+HUGO_VERSION = "0.73.0"
 
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"
 
 [context.split1.environment]
-HUGO_ENV     = "production"
+HUGO_ENV = "production"
 HUGO_VERSION = "0.73.0"
 
 [context.deploy-preview]
