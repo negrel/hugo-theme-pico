@@ -4,10 +4,10 @@
 
 {{ if .Site.IsServer }}
 {{ $bundle := $bundleRaw | toCSS $cssOpts | postCSS $postCSSOpts }}
-<link rel="stylesheet" href="{{ $bundle.RelPermalink }}" media="screen">
+<link rel="stylesheet" href="{{ $bundle.Permalink }}" media="screen">
 {{ else }}
 {{ $bundle := $bundleRaw | toCSS $cssOpts | postCSS $postCSSOpts | minify | fingerprint "md5" | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $bundle.RelPermalink }}" crossorigin="anonymous" media="screen"
+<link rel="stylesheet" href="{{ $bundle.Permalink }}" crossorigin="anonymous" media="screen"
 	integrity="{{ $bundle.Data.Integrity }}">
 {{ end }}
 
@@ -15,7 +15,7 @@
 {{ if eq .Type "blog" }}
 {{ $syntax := resources.Get "css/syntax.css" }}
 {{ $syntax = $syntax | resources.Minify | fingerprint "md5" }}
-<link rel="stylesheet" href="{{ $syntax.RelPermalink }}" crossorigin="anonymous"
+<link rel="stylesheet" href="{{ $syntax.Permalink }}" crossorigin="anonymous"
 	integrity="{{ $syntax.Data.Integrity }}" media="screen">
 {{ end }}
 
@@ -29,6 +29,6 @@
 {{ end }}
 
 {{ $css = $css | postCSS $postCSSOpts | minify | fingerprint "md5" | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" crossorigin="anonymous" media="screen"
+<link rel="stylesheet" href="{{ $css.Permalink }}" crossorigin="anonymous" media="screen"
 	integrity="{{ $css.Data.Integrity }}">
 {{ end }}

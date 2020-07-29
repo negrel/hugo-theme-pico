@@ -14,7 +14,7 @@
 	{{ if (and (ne .Title .Site.Title) (ne (len .Title) 0)) }} - {{ .Title }} {{ end }}
 </title>
 {{ with .OutputFormats.Get "RSS" }}
-<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+<link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }}
 
 {{ with $.Site.Params.favicon }}
