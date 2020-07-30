@@ -11,7 +11,7 @@
 		{{ range .Params.bar }}
 		<div class="mt-8">
 			{{ if .icon }}
-			<img class="mx-auto h-32" src="{{ .icon }}" alt="{{ .name }} icon">
+			<img class="mx-auto h-32" src="{{ .icon | relURL }}" alt="{{ .name }} icon">
 			{{ end }}
 			<h2 class="inline-block">{{ .name }}</h2>
 			<div class="flex items-center">

@@ -18,7 +18,7 @@
 {{ end }}
 
 {{ with $.Site.Params.favicon }}
-<link rel="icon" href="{{ . }}">
+<link rel="icon" href="{{ . | relURL }}">
 {{ else }}
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 {{ end }}

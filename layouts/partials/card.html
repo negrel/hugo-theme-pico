@@ -3,7 +3,7 @@
 		{{/* A span is used instead a div for accessibiliy, <a> tag can't wrap div elements */}}
 		<span class="block">
 			{{ with .Params.banner }}
-			<div class="h-48 overflow-hidden bg-cover bg-center" style="background-image: url('{{ . }}');">
+			<div class="h-48 overflow-hidden bg-cover bg-center" style="background-image: url('{{ . | relURL }}');">
 			</div>
 			{{ end }}
 			<div class="px-4 mt-3 mb-3">
