@@ -26,7 +26,7 @@
 	{{ with $paginator.Prev }}
 	<div class="flex-1">
 		<a class="no-underline mr-4" href="{{ .URL }}">
-			<img src="/icons/top_arrow.svg" class="transform -rotate-90 inline-block">
+			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform -rotate-90 inline-block">
 		</a>
 		<a href="{{ .URL }}">
 			<span class="">{{ i18n "previous" | title }}</span>
@@ -44,7 +44,7 @@
 			<span class="">{{ i18n "next" | title }}</span>
 		</a>
 		<a class="no-underline ml-4" href="{{ .URL }}">
-			<img src="/icons/top_arrow.svg" class="transform rotate-90 inline-block">
+			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform rotate-90 inline-block">
 		</a>
 	</div>
 	{{ end }}
