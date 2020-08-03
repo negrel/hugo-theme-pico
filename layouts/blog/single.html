@@ -20,7 +20,7 @@
 <div class="flex flex-wrap justify-between items-center">
 	{{ if .Prev }}
 	<div class="{{ if .Next }} w-full sm:w-1/2 {{ end }} mb-1 text-center sm:text-left overflow-ellipsis pr-1">
-		<a class="mr-4" href="{{ .Prev.Permalink }}">
+		<a class="mr-4 no-underline" href="{{ .Prev.Permalink }}">
 			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform -rotate-90 inline-block">
 		</a>
 		<a href="{{ .Prev.Permalink }}">
@@ -35,7 +35,7 @@
 		<a href="{{ .Next.Permalink }}">
 			<span class="underline">{{ .Next.Title }}</span>
 		</a>
-		<a class="ml-4" href="{{ .Next.Permalink }}">
+		<a class="ml-4 no-underline" href="{{ .Next.Permalink }}">
 			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform rotate-90 inline-block">
 		</a>
 	</div>
