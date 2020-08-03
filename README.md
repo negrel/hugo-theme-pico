@@ -66,9 +66,11 @@ cd my_website
 
 # Install the node modules and the theme via the script
 ./setup.sh
+
 # OR manually
 # Installing node modules
 npm install
+
 # Adding the theme as a submodule (better maintenance than a clone)
 # NOTE: my_website/ must be a git repository
 git submodule add -f https://github.com/negrel/hugo-theme-pico.git ./themes/pico
