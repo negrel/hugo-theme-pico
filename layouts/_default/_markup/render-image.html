@@ -1,0 +1,8 @@
+<img {{ with .Page.Type }} class="mx-auto my-4" {{ end }} src="{{ .Destination | safeURL | relURL }}" alt="{{ .Text }}"
+	{{ with .Title}} title="{{ . }}" {{ end }}>
+
+{{ with .Text }}
+<div class="text-center my-2 font-sans text-md text-grey-800">
+	{{ . | safeHTML }}
+</div>
+{{ end }}

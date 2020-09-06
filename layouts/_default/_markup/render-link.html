@@ -5,7 +5,8 @@
 {{ $lineBreak = "break-words" }}
 {{ end }}
 
-<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }} class="underline {{ $lineBreak }}"
-	{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener" {{ end }}>
+<a href="{{ .Destination | relURL | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }}
+	class="underline {{ $lineBreak }}" {{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"
+	{{ end }}>
 	{{ .Text | safeHTML }}
 </a>
