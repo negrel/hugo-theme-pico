@@ -12,30 +12,30 @@
 <div class="text-justify leading-loose mb-12 text-lg">
 	{{ .Content }}
 </div>
-
-{{ if or (.Prev) (.Next) }}
+{{/* Previous / Next section */}}
+{{ if or (.PrevInSection) (.NextInSection) }}
 <hr class="mb-6 mt-24">
 {{ end }}
 
 <div class="flex flex-wrap justify-between items-center">
-	{{ if .Prev }}
-	<div class="{{ if .Next }} w-full sm:w-1/2 {{ end }} mb-1 text-center sm:text-left overflow-ellipsis pr-1">
-		<a class="mr-4 no-underline" href="{{ .Prev.Permalink }}">
+	{{ if .PrevInSection }}
+	<div class="{{ if .NextInSection }} w-full sm:w-1/2 {{ end }} mb-1 text-center sm:text-left overflow-ellipsis pr-1">
+		<a class="mr-4 no-underline" href="{{ .PrevInSection.Permalink }}">
 			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform -rotate-90 inline-block">
 		</a>
-		<a href="{{ .Prev.Permalink }}">
-			<span class="underline">{{ .Prev.Title }}</span>
+		<a href="{{ .PrevInSection.Permalink }}">
+			<span class="underline">{{ .PrevInSection.Title }}</span>
 		</a>
 	</div>
 	{{ end }}
 
-	{{ if .Next }}
+	{{ if .NextInSection }}
 	<div
-		class="{{ if .Prev }} w-full sm:w-1/2 {{ else }} ml-auto {{ end }} mt-1 text-center sm:text-right overflow-ellipsis pl-1">
-		<a href="{{ .Next.Permalink }}">
-			<span class="underline">{{ .Next.Title }}</span>
+		class="{{ if .PrevInSection }} w-full sm:w-1/2 {{ else }} ml-auto {{ end }} mt-1 text-center sm:text-right overflow-ellipsis pl-1">
+		<a href="{{ .NextInSection.Permalink }}">
+			<span class="underline">{{ .NextInSection.Title }}</span>
 		</a>
-		<a class="ml-4 no-underline" href="{{ .Next.Permalink }}">
+		<a class="ml-4 no-underline" href="{{ .NextInSection.Permalink }}">
 			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform rotate-90 inline-block">
 		</a>
 	</div>
