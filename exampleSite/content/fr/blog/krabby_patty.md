@@ -8,7 +8,7 @@ date = 2020-06-25
 description = "Recette du légendaire Krabby Patty."
 
 # Comment next line and the default banner wil be used.
-banner = '/img/krabby_patty.webp'
+banner = 'img/krabby_patty.webp'
 
 +++
 
