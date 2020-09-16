@@ -11,11 +11,11 @@
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^2.3.0",
 		"autoprefixer": "^9.8.6",
-		"npm-check-updates": "^8.0.5",
+		"npm-check-updates": "^9.0.1",
 		"postcss": "^7.0.32",
 		"postcss-cli": "^7.1.2",
 		"postcss-import": "^12.0.1",
-		"tailwindcss": "^1.7.6"
+		"tailwindcss": "^1.8.8"
 	},
 	"browserslist": [
 		"last 1 version",
