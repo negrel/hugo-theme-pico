@@ -8,6 +8,12 @@
 	</a>
 </p>
 
+# FORKED NOTES
+
+In order to pull in changes from the original repo, use the command `git pull upstream master`
+
+# README NOTES
+
 This theme aims to be minimalist, readable, responsive, light and beautiful. Inspired by **Medium** and **The New York Times**, Pico try to provide the best experience for the reader while having an awesome design. It can be configured as a single page, or as a full-featured site with multiple sections. It is multilingual, responsive, and includes a light and *dark theme* (*soon*).
 
 You can check the [**example site**](https://sponge-bob.netlify.app/).
