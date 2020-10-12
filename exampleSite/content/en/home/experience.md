@@ -2,6 +2,9 @@
 widget = "timeline"
 weight = 30  # Order that this section will appear.
 
+# This widget will be displayed
+display = true
+
 # Widget title
 title = "Experience"
 # Widget subtitle
