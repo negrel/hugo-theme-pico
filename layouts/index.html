@@ -2,11 +2,13 @@
 {{ with .Site.GetPage "/home"}}
 {{ range $index, $st := .Resources.ByType "page" }}
 
-{{ $widget := (or (and $st.Params.display $st.Params.widget ) "blank" )}}
+{{ if ne $st.Params.hidden true }}
+{{ $widget := or $st.Params.widget "blank" }}
 {{ $widget_path := printf "widgets/%s.html" $widget}}
 {{ partial $widget_path $st }}
 {{ if ne $widget "blank" }}
 <hr class="my-12">
+{{ end }}
 {{ end }}
 {{ end }}
 
