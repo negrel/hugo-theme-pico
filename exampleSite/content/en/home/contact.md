@@ -2,6 +2,9 @@
 widget = "contact_form"
 title = "Contact me" 
 
+# This widget will be displayed
+display = true
+
 # Uncomments the following line for
 # standard forms.
 #
