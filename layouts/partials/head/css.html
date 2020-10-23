@@ -25,10 +25,14 @@
 {{ $css := $style }}
 
 {{ if or (strings.HasSuffix $style.Name "sass") (strings.HasSuffix $style.Name "scss")}}
-{{ $css = $css | toCSS $cssOpts }}
+{{ $customCSSopt := (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
+{{ if site.IsServer }}
+{{ $customCSSopt = (dict "targetPath" "css/main.css" "outputStyle" "expanded" "enableSourceMap" true) }}
+{{ end }}
+{{ $css = $css | toCSS $customCSSopt }}
 {{ end }}
 
-{{ $css = $css | postCSS $postCSSOpts | minify | fingerprint "md5" | resources.PostProcess }}
+{{ $css = $css | minify | fingerprint "md5" | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $css.Permalink }}" crossorigin="anonymous" media="screen"
 	integrity="{{ $css.Data.Integrity }}">
 {{ end }}
