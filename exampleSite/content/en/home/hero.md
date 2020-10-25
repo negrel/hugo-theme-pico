@@ -3,8 +3,8 @@ widget = "hero"
 # Order that this section will appear.
 weight = 10
 
-# This widget will be displayed
-display = true
+# Uncomment the following line and widget will NOT be displayed
+# hidden = true
 
 # Hero image (optional). Enter filename of an image in the `static/` folder.
 hero_media = "/img/portrait.webp"

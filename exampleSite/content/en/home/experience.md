@@ -2,8 +2,8 @@
 widget = "timeline"
 weight = 30  # Order that this section will appear.
 
-# This widget will be displayed
-display = true
+# Uncomment the following line and widget will NOT be displayed
+# hidden = true
 
 # Widget title
 title = "Experience"
