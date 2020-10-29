@@ -9,14 +9,14 @@
 	"author": "Alexandre Negrel",
 	"license": "MIT",
 	"dependencies": {
-		"@fullhuman/postcss-purgecss": "^2.3.0",
-		"autoprefixer": "^9.8.6",
-		"postcss": "^7.0.32",
-		"postcss-cli": "^7.1.2",
-		"postcss-import": "^12.0.1",
-		"tailwindcss": "^1.8.3"
+		"@fullhuman/postcss-purgecss": "^3.0.0",
+		"autoprefixer": "^10.0.1",
+		"postcss": "^8.1.4",
+		"postcss-cli": "^8.1.0",
+		"postcss-import": "^13.0.0",
+		"tailwindcss": "^1.9.6"
 	},
 	"devDependencies": {
-		"npm-check-updates": "^8.1.0"
+		"npm-check-updates": "^9.2.3"
 	}
 }
