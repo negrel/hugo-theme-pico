@@ -1,0 +1,62 @@
+[tagged_in]
+other = "Presenti in"
+
+[other_tags]
+other = "Altri tag"
+
+[read_more]
+other = "Altro"
+
+[name]
+other = "Nome"
+
+[your_message]
+other = "Il tuo messaggio"
+
+[cancel]
+other = "Cancella"
+
+[submit]
+other = "Invia"
+
+[previous]
+other = "Precedente"
+
+[gallery]
+other = "Galleria"
+
+[next]
+other = "Avanti"
+
+[back]
+other = "Indietro"
+
+[contact]
+other = "Contatti"
+
+[contact_email]
+other = "Contatto via email"
+
+[latest_post]
+other = "Ultimo post"
+
+[reading_time]
+other = "{{ .ReadingTime }} min di lettura"
+
+[home]
+other = "Home"
+
+[about]
+other = "Chi sono"
+
+[events]
+other = "Eventi"
+
+[posts]
+other = "Post"
+
+[present]
+other = "Presente"
+
+[required_fields]
+other = "Campi richiesti"
