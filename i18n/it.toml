@@ -35,7 +35,7 @@ other = "Indietro"
 other = "Contatti"
 
 [contact_email]
-other = "Conttato via email"
+other = "Contatto via email"
 
 [latest_post]
 other = "Ultimo post"
@@ -47,7 +47,7 @@ other = "{{ .ReadingTime }} min di lettura"
 other = "Home"
 
 [about]
-other = "Circa"
+other = "Chi sono"
 
 [events]
 other = "Eventi"
