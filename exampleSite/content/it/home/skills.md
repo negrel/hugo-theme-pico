@@ -22,7 +22,7 @@ subtitle = "Destreggio molto bene le seguenti attività"
 
 [[bar]]
 	icon = "/icons/chicken.svg"
-	name = "Qualità del cibo
+	name = "Qualità del cibo"
 	percent = "87%"
 
 
