@@ -24,7 +24,6 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
 module.exports = {
 	plugins: [
-		// require('postcss-node-sass'),
 		require('postcss-import')({
 			path: [themeDir]
 		}),
