@@ -13,8 +13,16 @@ const inset = generator({
 		'screen': '100vw'
 	}, {
 		std: true,
-		negative: true,
 		percentage: true,
+		vw: true
+	}),
+	maxHeight = generator({
+		'0': '0rem',
+		'screen': '100vw'
+	}, {
+		std: true,
+		percentage: true,
+		vh: true
 	});
 
 module.exports = {
@@ -22,6 +30,7 @@ module.exports = {
 		inset,
 		extend: {
 			maxWidth,
+			maxHeight,
 			fontFamily: {
 				'serif': ['Spectral', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
 				'charter': ['charter', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
@@ -55,6 +64,14 @@ module.exports = {
 			}
 		},
 		boxShadow: {
+			xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
+      sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+      DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+      md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+      lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+			'2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+			// Custom shadow
 			1: '0 1px 3px rgba(0,0,0,0.2), 0 1px 1px rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12)',
 			2: '0 1px 5px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12)',
 			3: '0 1px 8px rgba(0,0,0,0.2), 0 3px 4px rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12)',
@@ -71,6 +88,7 @@ module.exports = {
 			14: '0 7px 9px -4px rgba(0,0,0,0.2), 0 14px 21px 2px rgba(0,0,0,0.14), 0 5px 26px 4px rgba(0,0,0,0.12)',
 			15: '0 8px 9px -5px rgba(0,0,0,0.2), 0 15px 22px 2px rgba(0,0,0,0.14), 0 6px 28px 5px rgba(0,0,0,0.12)',
 			16: '0 8px 10px -5px rgba(0,0,0,0.2), 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12)',
+			soft: '0 30px 60px -10px rgba(0,0,0,.22), 0 18px 36px -18px rgba(0,0,0,.25)'
 		}
 	},
 	variants: {
