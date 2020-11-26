@@ -7,8 +7,8 @@ languageCode = 'en-us'
 paginate = 10
 theme = 'pico'
 # Title of the website is used for the meta tag title
-# and the square icon (except favicon)
-title = 'Sponge-Bob'
+# and the square icon (not the favicon)
+title = 'Medium'
 
 [params]
 customCSS = [
