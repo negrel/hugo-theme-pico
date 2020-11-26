@@ -98,7 +98,7 @@ category = "categories"
 tag = "tags"
 
 # Translation
-# English and French are supported but you can contribute
+# English, French and Italian are supported but you can contribute
 # by adding translation to i18n/ folder.
 [languages.en]
 contentDir = 'content/en'
@@ -111,3 +111,9 @@ contentDir = 'content/fr'
 languageCode = 'fr'
 languageName = 'Français'
 weight = 2
+
+[languages.it]
+contentDir = 'content/it'
+languageCode = 'it'
+languageName = 'Italiano'
+weight = 3
