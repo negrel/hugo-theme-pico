@@ -1,6 +1,6 @@
 <section id="hero" class="mt-8 mx-auto flex flex-wrap items-center">
 	<div
-		class="mx-auto p-8 text-center md:text-left {{ with .Params.hero_media }} md:w-1/2 {{ else }} md:w-3/4 {{ end }}">
+		class="mx-auto p-2 sm:p-8 text-center md:text-left {{ with .Params.hero_media }} md:w-1/2 {{ else }} md:w-3/4 {{ end }}">
 		<div>
 			{{ .Content }}
 		</div>
@@ -23,10 +23,13 @@
 	</div>
 
 	{{ with .Params.hero_media }}
-	<div class="p-4 my-6 mx-auto max-w-2/3 md:max-w-1/2 h-full shadow-6 relative">
-		<div class="bg-black bg-opacity-50 w-48 h-12 absolute top-0 -right-16 transform rotate-45"></div>
+	<div class="p-3 md:p-4 my-6 mx-auto max-w-3/4 sm:max-w-2/3 md:max-w-1/2 h-full shadow-6 relative">
+		<div
+			class="bg-black bg-opacity-50 w-32 h-8 lg:w-48 lg:h-12 absolute top-0 -right-12 lg:-right-16 transform rotate-45">
+		</div>
 		<img src="{{ . | relURL}}" alt="hero image">
-		<div class="bg-green-apple w-48 h-12 absolute bottom-0 -left-16 transform rotate-45"></div>
+		<div class="bg-green-apple w-32 h-8 lg:w-48 lg:h-12 absolute bottom-0 -left-12 lg:-left-16 transform rotate-45">
+		</div>
 	</div>
 	{{ end }}
 
