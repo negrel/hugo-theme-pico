@@ -1,4 +1,6 @@
-const themeDir = __dirname + '/../../';
+const path = require('path')
+
+const themeDir = path.join(__dirname, '..', '..')
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
