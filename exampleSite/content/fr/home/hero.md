@@ -7,7 +7,7 @@ weight = 10
 # hidden = true
 
 # Hero image (optional). Enter filename of an image in the `static/` folder.
-hero_media = "/img/portrait.webp"
+hero_media = "/img/portrait.jpg"
 
 # Buttons
 # Add as much button as you want
@@ -25,6 +25,6 @@ hero_media = "/img/portrait.webp"
 
 +++
 
-# Je m'appelle **Bob l'Éponge** et je suis **cuisinier en chef**.
+# Un thème pour **exprimer** vos idées.
 
-Tout mes plats sont faits avec amour.
+Pico est un thème qui se veut minimaliste, responsive, clair et léger.

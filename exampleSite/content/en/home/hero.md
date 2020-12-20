@@ -7,7 +7,7 @@ weight = 10
 # hidden = true
 
 # Hero image (optional). Enter filename of an image in the `static/` folder.
-hero_media = "/img/portrait.webp"
+hero_media = "/img/portrait.jpg"
 
 # Buttons
 # Add as much button as you want
@@ -25,6 +25,7 @@ hero_media = "/img/portrait.webp"
 
 +++
 
-# My name is **Sponge Bob** and I'm a **chief cook**.
+# A theme to **express** your ideas.
 
-All my dishes are made with love
+Pico is a minimalist, readable, responsive, light and beautiful Hugo theme.
+
