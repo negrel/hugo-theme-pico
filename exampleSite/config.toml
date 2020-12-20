@@ -112,8 +112,9 @@ languageCode = 'fr'
 languageName = 'Français'
 weight = 2
 
-[languages.it]
-contentDir = 'content/it'
-languageCode = 'it'
-languageName = 'Italiano'
-weight = 3
+# Uncomment the following lines to add an italian translation.
+# [languages.it]
+# contentDir = 'content/it'
+# languageCode = 'it'
+# languageName = 'Italiano'
+# weight = 3
