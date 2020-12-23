@@ -1,3 +1,220 @@
+/home/negrel/code/hugo/pico/assets/config
+@font-face {
+  font-family: 'charter';
+
+  src: url("../fonts/charter/bold_italic.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'charter';
+
+  src: url("../fonts/charter/bold.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'charter';
+
+  src: url("../fonts/charter/italic.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'charter';
+
+  src: url("../fonts/charter/regular.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/extra_light_italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/light_italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/medium_italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/semi_bold_italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/bold_italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/extra_bold_italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/extra_light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/semi_bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Spectral';
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url(../fonts/spectral/extra_bold.woff2) format("woff2");
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -25808,222 +26025,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-@font-face {
-  font-family: 'charter';
-
-  src: url("../fonts/charter/bold_italic.woff") format("woff");
-
-  font-weight: bold;
-
-  font-style: italic;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'charter';
-
-  src: url("../fonts/charter/bold.woff") format("woff");
-
-  font-weight: bold;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'charter';
-
-  src: url("../fonts/charter/italic.woff") format("woff");
-
-  font-weight: normal;
-
-  font-style: italic;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'charter';
-
-  src: url("../fonts/charter/regular.woff") format("woff");
-
-  font-weight: normal;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: italic;
-
-  font-weight: 200;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/extra_light_italic.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: italic;
-
-  font-weight: 300;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/light_italic.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: italic;
-
-  font-weight: 400;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/italic.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: italic;
-
-  font-weight: 500;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/medium_italic.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: italic;
-
-  font-weight: 600;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/semi_bold_italic.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: italic;
-
-  font-weight: 700;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/bold_italic.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: italic;
-
-  font-weight: 800;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/extra_bold_italic.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: normal;
-
-  font-weight: 200;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/extra_light.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: normal;
-
-  font-weight: 300;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/light.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/regular.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: normal;
-
-  font-weight: 500;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/medium.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: normal;
-
-  font-weight: 600;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/semi_bold.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/bold.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'Spectral';
-
-  font-style: normal;
-
-  font-weight: 800;
-
-  font-display: swap;
-
-  src: url(../fonts/spectral/extra_bold.woff2) format("woff2");
-}
-
 .blend-diff {
   mix-blend-mode: difference;
 }
@@ -26036,15 +26037,15 @@ video {
   mix-blend-mode: initial;
 }
 
-.absolute-center {
-  position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);
-}
-
 .overflow-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
+}
+
+.absolute-center {
+  position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);
 }
 
 * {
