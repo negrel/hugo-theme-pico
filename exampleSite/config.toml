@@ -118,3 +118,10 @@ weight = 2
 # languageCode = 'it'
 # languageName = 'Italiano'
 # weight = 3
+
+# Uncomment the following lines to add an spanish translation.
+# [languages.es]
+# contentDir = 'content/es'
+# languageCode = 'es'
+# languageName = 'Español'
+# weight = 4
