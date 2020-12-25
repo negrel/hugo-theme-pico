@@ -8,22 +8,22 @@ const inset = generator({
 	negative: true,
 	percentage: true,
 }),
-	maxWidth = generator({
-		'0': '0rem',
-		'screen': '100vw'
-	}, {
-		std: true,
-		percentage: true,
-		vw: true
-	}),
-	maxHeight = generator({
-		'0': '0rem',
-		'screen': '100vw'
-	}, {
-		std: true,
-		percentage: true,
-		vh: true
-	});
+maxWidth = generator({
+	'0': '0rem',
+	'screen': '100vw'
+}, {
+	std: true,
+	percentage: true,
+	vw: true
+}),
+maxHeight = generator({
+	'0': '0rem',
+	'screen': '100vw'
+}, {
+	std: true,
+	percentage: true,
+	vh: true
+});
 
 module.exports = {
 	theme: {
