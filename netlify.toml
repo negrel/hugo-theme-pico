@@ -1,5 +1,5 @@
 [build]
-command = "cd exampleSite && hugo --gc --minify -t repo --themesDir ../.. -b https://sponge-bob.netlify.app/"
+command = "cd exampleSite && hugo --gc -t repo --themesDir ../.. -b https://sponge-bob.netlify.app/"
 publish = "exampleSite/public/"
 
 [context.production.environment]
@@ -8,20 +8,20 @@ HUGO_ENV = "production"
 HUGO_VERSION = "0.73.0"
 
 [context.split1]
-command = "hugo --gc --minify --enableGitInfo"
+command = "hugo --gc --enableGitInfo"
 
 [context.split1.environment]
 HUGO_ENV = "production"
 HUGO_VERSION = "0.73.0"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.73.0"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.73.0"
