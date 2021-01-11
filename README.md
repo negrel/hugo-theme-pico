@@ -56,6 +56,7 @@ Learn how to install and use npm [here](https://www.npmjs.com/get-npm).
 git clone https://github.com/negrel/hugo-theme-pico.git pico
 
 # Copy the example site
+mkdir my_website
 cp -r pico/exampleSite/* my_website
 
 # You can delete the cloned repository
