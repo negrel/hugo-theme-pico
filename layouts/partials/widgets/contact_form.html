@@ -37,7 +37,8 @@
 			{{ end }}
 			{{ if eq .type "textarea" }}
 			<textarea rows="5" {{ printf "name=%q" .name | safeHTMLAttr }} {{ printf "id=%q" .name | safeHTMLAttr }}
-				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }} {{ $minlength }} {{ $maxlength }}></textarea>
+				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }} {{ $minlength }} {{ $maxlength }}
+				{{ if .required }} required {{ end }}></textarea>
 			{{ else }}
 			{{ $type := .type | default "text" }}
 			<input {{ printf "type=%q" .type | safeHTMLAttr }} {{ printf "name=%q" .name | safeHTMLAttr }}

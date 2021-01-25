@@ -31,7 +31,7 @@ minlength = "3"
 # maxlength = "25"
 name = "name"
 # pattern matching
-pattern = "[a-zA-Z]"
+pattern = "[a-zA-Z]+"
 placeholder = "Name"
 # The input is required to submit the form
 # required = true
@@ -48,7 +48,7 @@ required = true
 [[inputs]]
 label = "Your message (minimum 10 characters)"
 type = "textarea"
-minlength = "10"
+# pattern is not supported on textarea
 name = "message"
 placeholder = "Your message..."
 required = true
