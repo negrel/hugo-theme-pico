@@ -26,6 +26,7 @@ maxHeight = generator({
 });
 
 module.exports = {
+	darkMode: 'media',
 	theme: {
 		inset,
 		extend: {
@@ -60,8 +61,19 @@ module.exports = {
 					'700': '#2f855a',
 					'800': '#276749',
 					'900': '#22543d',
-				}
-			}
+				},
+				primary: 'var(--color-primary)',
+				'primary-dark': 'var(--color-primary-dark)',
+				'primary-light': 'var(--color-primary-light)',
+
+				secondary: 'var(--color-secondary)',
+				'secondary-dark': 'var(--color-secondary-dark)',
+				'secondary-light': 'var(--color-secondary-light)',
+
+				accent: 'var(--color-accent)',
+				'accent-dark': 'var(--color-accent-dark)',
+				'accent-light': 'var(--color-accent-light)'
+			},
 		},
 		boxShadow: {
 			xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
@@ -92,8 +104,11 @@ module.exports = {
 		}
 	},
 	variants: {
-		backgroundColor: ['hover', 'active'],
+		backgroundColor: ['hover', 'active', 'dark'],
+		fontWeight: ['hover', 'focus'],
 		scale: ['hover', 'active'],
+		border: ['focus'],
+		textColor: ['hover', 'dark']
 	},
 	plugins: []
 }
