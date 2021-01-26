@@ -3,7 +3,7 @@
 	<a href="{{ .url }}" title="{{ .name }}"
 		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
 		{{ if .blank }} target="_blank" {{ end }} {{ if strings.HasPrefix .url "http" }} rel="noopener" {{ end }}>
-		<img src="{{ .icon | relURL }}" alt="{{ .alt }}" class="w-4 h-4 md:w-6 md:h-6">
+		<img src="{{ .icon | relURL }}" alt="{{ .alt }}" class="w-4 h-4 md:w-6 md:h-6 blend-diff">
 	</a>
 	{{ end }}
 </div>
