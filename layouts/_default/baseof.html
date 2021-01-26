@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}'>
+<html lang='{{ .Site.LanguageCode }}' class="{{ if .Site.Params.darkMode }} dark {{ end }}">
 
 <head>
 	{{ partial "head/metadata.html" . }}

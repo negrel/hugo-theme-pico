@@ -26,7 +26,7 @@ maxHeight = generator({
 });
 
 module.exports = {
-	darkMode: 'media',
+	darkMode: 'class',
 	theme: {
 		inset,
 		extend: {
