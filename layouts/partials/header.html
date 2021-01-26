@@ -1,6 +1,6 @@
 {{ $page := . }}
 
-<header class="w-full flex items-center justify-between px-5 mx-auto md:mt-8 md:max-w-5xl pt-2 md:pt-0">
+<header class="w-full flex items-center justify-between px-5 mx-auto md:pt-8 md:max-w-5xl pt-5">
 	{{/* Pico responsive icon (square and text) */}}
 	<div class="flex items-center">
 		<a href="{{ .Site.Home.Permalink }}" class="inline-block font-bold no-underline select-none">
@@ -27,7 +27,8 @@
 
 	<nav class="">
 		{{ range .Site.Menus.main }}
-		<a href="{{ .URL | relLangURL}}" class='mx-1 md:mx-2 hover:text-black no-underline'>
+		<a href="{{ .URL | relLangURL}}"
+			class='mx-1 md:mx-2 hover:text-primary-light dark:hover:text-primary-dark no-underline'>
 			{{ .Pre }} {{ i18n .Identifier }}
 		</a>
 		{{ end }}
