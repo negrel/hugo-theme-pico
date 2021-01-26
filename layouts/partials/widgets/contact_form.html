@@ -35,30 +35,32 @@
 				</label>
 			</div>
 			{{ end }}
+			{{ $class := "bg-secondary-light border-secondary focus:border-accent" }}
 			{{ if eq .type "textarea" }}
 			<textarea rows="5" {{ printf "name=%q" .name | safeHTMLAttr }} {{ printf "id=%q" .name | safeHTMLAttr }}
 				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }} {{ $minlength }} {{ $maxlength }}
-				{{ if .required }} required {{ end }}></textarea>
+				{{ if .required }} required {{ end }} {{ printf "class='%s'" $class | safeHTMLAttr }}></textarea>
 			{{ else }}
 			{{ $type := .type | default "text" }}
 			<input {{ printf "type=%q" .type | safeHTMLAttr }} {{ printf "name=%q" .name | safeHTMLAttr }}
 				{{ printf "id=%q" .name | safeHTMLAttr }} {{ printf "placeholder=%q" .placeholder | safeHTMLAttr }}
-				{{ $pattern }} {{ if .required }} required {{ end }}>
+				{{ $pattern }} {{ if .required }} required {{ end }}
+				{{ printf "class='%s'" $class | safeHTMLAttr }}>
 			{{ end }}
 		</div>
 		{{ end }}
 
 		{{ if .Params.useEmail }}
 		{{ with .Site.Params.email }}
-		<a class="bg-gray-200 px-3 py-2 rounded-md mr-2 no-underline inline-block" href="mailto:{{ . }}">
+		<a class="bg-secondary-dark dark:bg-secondary-light px-3 py-2 rounded-md mr-2 no-underline inline-block" href="mailto:{{ . }}">
 			{{ i18n "contact_email" }}
 		</a>
 		{{ end }}
 		{{ end }}
 
 		<div class="float-right">
-			<input type="reset" class="bg-gray-200 mr-2" value='{{ i18n "cancel" }}' />
-			<input type="submit" class="bg-black text-white" value='{{ i18n "submit" }}' />
+			<input type="reset" class="bg-secondary-dark dark:bg-secondary-light mr-2" value='{{ i18n "cancel" }}' />
+			<input type="submit" class="bg-primary text-secondary" value='{{ i18n "submit" }}' />
 		</div>
 	</form>
 </section>

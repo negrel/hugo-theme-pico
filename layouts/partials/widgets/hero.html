@@ -6,17 +6,14 @@
 		</div>
 		<div class="mx-auto mt-8 mb-8 md:mb-0 flex justify-center">
 			{{ range .Params.btn }}
-			{{ $class := "border border-green-400 hover:text-white" }}
+			{{ $class := "border border-accent hover:border-accent-dark transition duration-300 ease-in-out no-underline hover:bg-accent-dark hover:text-secondary dark:hover:text-primary dark:text-primary" }}
 			{{ if .primary }}
-			{{ $class = "bg-green-400 text-white"}}
+			{{ $class = printf "%s %s" $class "bg-accent text-secondary"}}
 			{{ end }}
 
-			<a href="{{ .url | relLangURL }}" class="no-underline">
-				<div
-					class="px-4 py-2 mx-2 rounded-sm text-center hover:bg-green-500 active:bg-green-600 transition duration-300 ease-in-out {{ $class }}">
-					{{ .label }}
-				</div>
-			</a>
+			{{ $btnAttrs := dict "class" $class "href" (.url | relLangURL)}}
+			{{ $btnOpt := dict "el" "a" "content" .label "attrs" $btnAttrs}}
+			{{ partial "button" $btnOpt }}
 
 			{{ end }}
 		</div>
@@ -24,7 +21,7 @@
 
 	{{ with .Params.hero_media }}
 	<div
-		class="my-6 p-4 mx-auto max-w-3/4 sm:max-w-2/3 md:max-w-1/2 lg:relative lg:-right-10 xl:-right-16 shadow-soft relative">
+		class="my-6 p-4 mx-auto max-w-3/4 sm:max-w-2/3 md:max-w-1/2 lg:relative lg:-right-10 xl:-right-16 shadow-soft relative bg-secondary-light">
 		<img src="{{ . | relURL}}" alt="hero image" class="max-h-vh-3/4">
 	</div>
 	{{ end }}

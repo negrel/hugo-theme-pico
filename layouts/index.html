@@ -7,7 +7,7 @@
 {{ $widget_path := printf "widgets/%s.html" $widget}}
 {{ partial $widget_path $st }}
 {{ if ne $widget "blank" }}
-<hr class="my-24">
+<hr class="my-24 border-secondary-dark dark:border-secondary-light">
 {{ end }}
 {{ end }}
 {{ end }}

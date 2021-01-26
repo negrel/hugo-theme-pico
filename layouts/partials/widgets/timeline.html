@@ -12,17 +12,17 @@
 
 	<div class="relative">
 		{{/* Timeline bar */}}
-		<div class="h-full border-l border-black absolute left-0 md:absolute-center"></div>
+		<div class="h-full border-l border-primary-dark absolute left-0 md:absolute-center"></div>
 		<div>
 			{{ range $index, $period := .Params.period }}
 			{{ $even := modBool $index 2 }}
 
 			{{ $containerClass := "md:mr-auto pl-4 md:pl-0 md:pr-4"}}
-			{{ $dateClass := "md:text-right font-thin text-grey-800 text-xl" }}
+			{{ $dateClass := "md:text-right font-light text-primary text-xl" }}
 
 			{{ if $even }}
 			{{ $containerClass = "md:ml-auto pl-4"}}
-			{{ $dateClass = "font-thin text-grey-800 text-xl" }}
+			{{ $dateClass = "font-light text-primary text-xl" }}
 			{{ end }}
 
 
@@ -34,17 +34,18 @@
 				<div class="mb-4 {{ $dateClass }}">{{ $period.date_end | dateFormat $dateFormat }}
 				</div>
 				{{ end }}
-				<div class="p-4 border border-black rounded-md transition ease-in-out duration-300 shadow-2 hover:shadow-8 ">
-					<h2 class="inline-block my-0 text-grey-800">{{ .title | markdownify }}</h2>
+				<div
+					class="p-4 border-2 border-primary-light dark:border-secondary-light rounded-md transition ease-in-out duration-300 shadow-2 hover:shadow-8 ">
+					<h2 class="inline-block my-0 text-primary">{{ .title | markdownify }}</h2>
 
 					{{ with .location }}
 					<span class="mx-2">&middot; {{ . }}</span>
 					{{ end }}
 
-					<h3 class="mt-1 mb-0 text-grey-700">{{ .subtitle | markdownify }}</h3>
+					<h3 class="mt-1 mb-0 text-primary-dark">{{ .subtitle | markdownify }}</h3>
 
 					{{ with .description }}
-					<div class="mb-2 text-grey-800">
+					<div class="mb-2 text-primary">
 						<p>{{ . | markdownify }}</p>
 					</div>
 					{{ end }}
