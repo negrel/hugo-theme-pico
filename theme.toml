@@ -17,6 +17,7 @@ name        = "Pico"
 tags        = [
 	"blog",
 	"light",
+	"dark",
 	"clean",
 	"simple",
 	"mobile",
