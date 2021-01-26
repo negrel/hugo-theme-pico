@@ -8,7 +8,7 @@
 	</a>
 </p>
 
-This theme aims to be minimalist, readable, responsive, light and beautiful. Inspired by **Medium** and **The New York Times**, Pico try to provide the best experience for the reader while having an awesome design. It can be configured as a single page, or as a full-featured site with multiple sections. It is multilingual, responsive, and includes a light and *dark theme* (*soon*).
+This theme aims to be minimalist, readable, responsive, light and beautiful. Inspired by **Medium** and **The New York Times**, Pico try to provide the best experience for the reader while having an awesome design. It can be configured as a single page, or as a full-featured site with multiple sections. It is multilingual, responsive, and includes a light and *dark theme*.
 
 You can check the [**example site**](https://sponge-bob.netlify.app/).
 ![pico example screenshot](https://github.com/negrel/hugo-theme-pico/raw/master/.github/banner.jpg)
