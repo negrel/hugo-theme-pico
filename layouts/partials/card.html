@@ -1,25 +1,25 @@
-<div class="mb-4 border border-gray-300 rounded-md overflow-hidden">
+<div class="mb-4 border border-primary-light dark:border-secondary-light rounded-md overflow-hidden">
 	<a href="{{ .Permalink }}" class="no-underline block">
 		{{/* A span is used instead a div for accessibiliy, <a> tag can't wrap div elements */}}
-		<span class="block">
-			{{ with .Params.banner }}
-			<div class="h-48 overflow-hidden bg-cover bg-center" style="background-image: url('{{ . | absURL }}');">
-			</div>
-			{{ end }}
-			<div class="px-4 mt-3 mb-3">
-				<h2 class="m-0 inline-block overflow-ellipsis">{{ .Title | emojify }}</h2>
-				<span class="block no-underline font-thin text-gray-700 -mt-2">
-					{{ dateFormat "02/01/2006" .Date }} &middot; {{ i18n "reading_time" . }}
-				</span>
-			</div>
-			<div class="px-4 mb-3 text-gray-600 overflow-ellipsis">
-				{{ with .Params.subtitle }}
-				{{ . }}
-				{{ else }}
-				{{ substr .Plain 0 256 }}
+			<span class="block">
+				{{ with .Params.banner }}
+				<div class="h-48 overflow-hidden bg-cover bg-center" style="background-image: url('{{ . | absURL }}');">
+				</div>
 				{{ end }}
-				<span class="text-xs mt-3 block no-underline">{{ i18n "read_more" }}...</span>
-			</div>
-		</span>
-	</a>
+				<div class="px-4 mt-3 mb-3">
+					<h2 class="m-0 inline-block overflow-ellipsis">{{ .Title | emojify }}</h2>
+					<span class="block no-underline font-thin text-primary dark:text-primary-light -mt-2">
+						{{ dateFormat "02/01/2006" .Date }} &middot; {{ i18n "reading_time" . }}
+					</span>
+				</div>
+				<div class="px-4 mb-3 text-primary-dark overflow-ellipsis">
+					{{ with .Params.subtitle }}
+					{{ . }}
+					{{ else }}
+					{{ substr .Plain 0 256 }}
+					{{ end }}
+					<span class="text-xs mt-3 block no-underline">{{ i18n "read_more" }}...</span>
+				</div>
+			</span>
+		</a>
 </div>
