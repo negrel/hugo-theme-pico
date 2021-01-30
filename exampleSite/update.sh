@@ -10,7 +10,8 @@ git submodule foreach git pull origin master
 
 echo "Updating theme resources : "
 npm ls postcss-cli > /dev/null
-if [ $? == 1 ] ; then
+if [ $? = 1 ] ; then
   echo "cp -r themes/pico//exampleSite/resources ."
   cp -r themes/pico//exampleSite/resources .
 fi
+echo "Theme resources updated."
