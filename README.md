@@ -15,12 +15,13 @@ You can check the [**example site**](https://sponge-bob.netlify.app/).
 
 Features :
 - Multilingual - supports side-by-side content in different language versions
-- Syntax highlighting (one dark theme)
+- Syntax highlighting ("one dark" theme)
 - Styled Markdown throughout, including post titles
 - Customizable pages with widget or [TailwindCSS](https://tailwindcss.com/)
 - Straightforward customization via config.toml
 - Projects and Blog sections
 - Light, CSS bundle is purged and minified thanks to PostCSS
+- Light & Dark theme
 
 Developer-friendly :
 - Sass files included with instant compiling to CSS thanks to Hugo Pipes and PostCSS
