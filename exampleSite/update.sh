@@ -34,3 +34,10 @@ if [ "$no_postcss_cli" = true ]; then
 	echo "cp -r ./themes/pico/exampleSite/resources ."
 	cp -r ./themes/pico/exampleSite/resources .
 fi
+
+script_path="./themes/pico/exampleSite/update.sh"
+if [ -f "$script_path" ]; then
+	echo "Updating update.sh : "
+	echo "cp "$script_path" ."
+	cmp --silent "./update.sh" "$script_path" || cp "$script_path" .
+fi
