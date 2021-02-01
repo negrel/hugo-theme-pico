@@ -25,7 +25,10 @@ fi
 no_postcss_cli=true;
 if [ "$no_npm" = false ]; then
 	npm ls postcss-cli > /dev/null
-	no_postcss_cli=$?
+
+	if [ $? = 0 ]; then
+		no_postcss_cli=false
+	fi
 fi
 
 
