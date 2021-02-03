@@ -6,6 +6,7 @@
 	<a href="https://github.com/negrel/ginger/raw/master/LICENSE">
 		<img src="https://img.shields.io/badge/license-MIT-green">
 	</a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fnegrel%2Fhugo-theme-pico?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnegrel%2Fhugo-theme-pico.svg?type=shield"/></a>
 </p>
 
 This theme aims to be minimalist, readable, responsive, light and beautiful. Inspired by **Medium** and **The New York Times**, Pico try to provide the best experience for the reader while having an awesome design. It can be configured as a single page, or as a full-featured site with multiple sections. It is multilingual, responsive, and includes a light and *dark theme*.
@@ -102,3 +103,6 @@ Please give a :star: if this project helped you!
 
 #### :scroll: License
 MIT © [Alexandre Negrel](https://www.negrel.dev)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnegrel%2Fhugo-theme-pico.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnegrel%2Fhugo-theme-pico?ref=badge_large)
