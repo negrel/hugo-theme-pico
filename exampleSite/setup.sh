@@ -10,7 +10,7 @@ git init
 
 echo "Installing Pico theme : "
 echo "git submodule add https://github.com/negrel/hugo-theme-pico.git ./themes/pico"
-git submodule add https://github.com/negrel/hugo-theme-pico.git ./themes/pico
+git submodule add -f https://github.com/negrel/hugo-theme-pico.git ./themes/pico
 
 ./update.sh
 
