@@ -1,5 +1,5 @@
 [build]
-command = "cd exampleSite && hugo --gc -t repo --themesDir ../.. -b https://sponge-bob.netlify.app/"
+command = "cd exampleSite && hugo --gc -t repo --themesDir ../.. -b $DEPLOY_PRIME_URL"
 publish = "exampleSite/public/"
 
 [context.production.environment]
