@@ -8,7 +8,8 @@
 </head>
 
 <body class="min-h-screen bg-secondary-light dark:bg-secondary text-primary relative pb-24">
-	<div id="top"></div>
+	{{/* class dark to prevent purge css from purging it */}}
+	<div id="top" class="dark"></div>
 
 	{{- partial "dev/size-indicator.html" . -}}
 	{{- partial "header.html" . -}}
