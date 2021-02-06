@@ -1,6 +1,6 @@
 [build]
-command = "cd exampleSite && hugo --gc -t repo --themesDir ../.. -b $DEPLOY_PRIME_URL"
-publish = "exampleSite/public/"
+command = "hugo --gc -b $URL"
+publish = "public/"
 
 [context.production.environment]
 HUGO_ENABLEGITINFO = "true"
