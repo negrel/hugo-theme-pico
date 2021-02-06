@@ -22,8 +22,12 @@ customJS = ["js/console.js"] # Path relative to assets folder
 description = "Boilerplate website"
 email = "mail@example.com"
 favicon = '/favicon.ico'
-# Dark mode support (default=false)
-darkMode = true
+# Dark mode support
+# Supported value are :
+# - off
+# - always
+# If commented the theme will use the browser theme.
+# darkMode = 'always'
 
 # Social parameters for contact_icons widget
 [[params.social]]

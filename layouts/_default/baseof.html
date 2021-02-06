@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}' class="{{ if .Site.Params.darkMode }} dark {{ end }}">
+<html lang='{{ .Site.LanguageCode }}' class='{{ if eq .Site.Params.darkmode "always" }} dark {{ end }}'>
 
 <head>
 	{{ partial "head/metadata.html" . }}
-	{{ partial "head/css.html" . }}
 	{{ partial "head/js.html" . }}
+	{{ partial "head/css.html" . }}
 </head>
 
 <body class="min-h-screen bg-secondary-light dark:bg-secondary text-primary relative pb-24">

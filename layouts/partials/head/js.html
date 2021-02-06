@@ -7,6 +7,11 @@
 {{ $js_bundle = $js_bundle | append $script }}
 {{ end }}
 
+{{/* Default option for dark mode is to use the browser theme */}}
+{{ if eq (isset .Site.Params "darkmode") false }}
+{{ $js_bundle = $js_bundle | append (resources.Get "js/dark-mode.js") }}
+{{ end }}
+
 {{ if gt (len $js_bundle) 0 }}
 
 {{ $js_bundle = $js_bundle | resources.Concat "js/pico.min.js" | fingerprint "md5" }}
