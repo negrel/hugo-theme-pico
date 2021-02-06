@@ -18,7 +18,7 @@ fi
 if [ "$no_npx" = false ] && [ "$no_npm" = false ] && [ -f "package.json" ]; then
 	echo "Updating node modules : "
 	echo "npx npm-check-updates -u && npm install"
-	npx npm-check-updates -u && npm install
+	npx npm-check-updates -u --packageFile package.json && npm install
 fi
 
 
