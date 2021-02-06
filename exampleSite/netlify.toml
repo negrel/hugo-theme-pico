@@ -1,5 +1,5 @@
 [build]
-command = "hugo --gc -b $URL"
+command = "hugo --gc"
 publish = "public/"
 
 [context.production.environment]
