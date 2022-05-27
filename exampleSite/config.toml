@@ -1,6 +1,6 @@
 # Use an empty string if you have multiple domain linking to your website
 # This string is used to generate the absolute URL for your assets.
-baseURL = 'https://example.com/'
+#baseURL = 'https://example.com/'
 defaultContentLanguage = 'en'
 # Emoji in markdown files
 enableEmoji = true
