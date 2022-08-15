@@ -101,6 +101,8 @@ If you want to contribute to Pico to add a feature or improve the code contact m
 ## :stars: Show your support
 Please give a :star: if this project helped you!
 
+[![buy me a coffee](.github/bmc-button.png)](https://www.buymeacoffee.com/negrel)
+
 #### :scroll: License
 MIT © [Alexandre Negrel](https://www.negrel.dev)
 
