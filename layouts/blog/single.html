@@ -1,15 +1,15 @@
 {{ define "main" }}
 <button onclick="window.history.back()"
 	class="bg-transparent border-none font-bold">&larr;{{ i18n "back" | title}}</button>
-<h1 class="text-center mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">
+<h1 class="blog-title text-center mx-auto max-w-vw-5/6 text-4xl sm:text-5xl md:text-6xl">
 	{{ .Title }}
 </h1>
 {{ with .Params.subtitle }}
-<h2 class="text-center font-serif font-thin mx-auto mb-16 max-w-4xl text-4xl">
+<h2 class="blog-subtitle text-center font-serif font-thin mx-auto mb-16 md:mt-16 md:mb-32 max-w-vw-11/12 text-2xl sm:text-3xl md:text-4xl">
 	{{ . }}
 </h2>
 {{ end }}
-<div class="text-justify leading-loose mb-12 text-lg">
+<div class="blog-content text-justify leading-loose mb-12 mx-auto max-w-vw-5/6 text-md">
 	{{ .Content }}
 </div>
 {{/* Previous / Next section */}}
