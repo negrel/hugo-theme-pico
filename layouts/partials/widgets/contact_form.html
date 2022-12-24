@@ -35,7 +35,7 @@
 				</label>
 			</div>
 			{{ end }}
-			{{ $class := "bg-secondary-light border-secondary focus:border-accent" }}
+			{{ $class := "bg-secondary-light border-secondary" }}
 			{{ if eq .type "textarea" }}
 			<textarea rows="5" {{ printf "name=%q" .name | safeHTMLAttr }} {{ printf "id=%q" .name | safeHTMLAttr }}
 				{{ printf "placeholder=%q" .placeholder | safeHTMLAttr }} {{ $minlength }} {{ $maxlength }}
