@@ -1,15 +1,16 @@
 {{ define "main" }}
-<button onclick="window.history.back()"
-	class="bg-transparent border-none font-bold">&larr;{{ i18n "back" | title}}</button>
+<button onclick="window.history.back()" class="bg-transparent border-none font-bold">&larr;{{ i18n "back" |
+	title}}</button>
 <h1 class="blog-title text-center mx-auto max-w-vw-5/6 text-4xl sm:text-5xl md:text-6xl">
 	{{ .Title }}
 </h1>
 {{ with .Params.subtitle }}
-<h2 class="blog-subtitle text-center font-serif font-thin mx-auto mb-16 md:mt-16 md:mb-32 max-w-vw-11/12 text-2xl sm:text-3xl md:text-4xl">
+<h2
+	class="blog-subtitle text-center font-serif font-thin mx-auto mb-16 md:mt-16 md:mb-32 max-w-vw-11/12 text-2xl sm:text-3xl md:text-4xl">
 	{{ . }}
 </h2>
 {{ end }}
-<div class="blog-content text-justify leading-loose mb-12 mx-auto max-w-vw-5/6 text-md">
+<div class="blog-content text-justify leading-loose mb-12 mx-auto sm:max-w-vw-5/6 text-md">
 	{{ .Content }}
 </div>
 {{/* Previous / Next section */}}
@@ -21,7 +22,7 @@
 	{{ if .PrevInSection }}
 	<div class="{{ if .NextInSection }} w-full sm:w-1/2 {{ end }} mb-1 text-center sm:text-left overflow-ellipsis pr-1">
 		<a class="mr-4 no-underline" href="{{ .PrevInSection.Permalink }}">
-			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform -rotate-90 inline-block">
+			<img src="{{ " /icons/top_arrow.svg" | relURL }}" class="transform -rotate-90 inline-block">
 		</a>
 		<a href="{{ .PrevInSection.Permalink }}">
 			<span class="underline">{{ .PrevInSection.Title }}</span>
@@ -36,7 +37,7 @@
 			<span class="underline">{{ .NextInSection.Title }}</span>
 		</a>
 		<a class="ml-4 no-underline" href="{{ .NextInSection.Permalink }}">
-			<img src="{{ "/icons/top_arrow.svg" | relURL }}" class="transform rotate-90 inline-block">
+			<img src="{{ " /icons/top_arrow.svg" | relURL }}" class="transform rotate-90 inline-block">
 		</a>
 	</div>
 	{{ end }}
