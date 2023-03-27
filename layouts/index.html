@@ -1,5 +1,7 @@
 {{ define "main" }}
 {{ with .Site.GetPage "/home"}}
+
+{{ $lastIndex := (sub (len (.Resources.ByType "page")) 1) }}
 {{ range $index, $st := .Resources.ByType "page" }}
 
 {{ if ne $st.Params.hidden true }}
@@ -7,7 +9,12 @@
 {{ $widget_path := printf "widgets/%s.html" $widget}}
 {{ partial $widget_path $st }}
 {{ if ne $widget "blank" }}
-<hr class="my-24 border-secondary-dark dark:border-secondary-light">
+
+{{ $lastSeparatorClass := "" }}
+{{ if eq $index $lastIndex }}
+{{ $lastSeparatorClass = "mb-12" }}
+{{ end }}
+<hr class="{{ $lastSeparatorClass }} my-24 border-secondary-dark dark:border-secondary-light">
 {{ end }}
 {{ end }}
 {{ end }}
