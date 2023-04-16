@@ -11,7 +11,7 @@
 	integrity="{{ $bundle.Data.Integrity }}">
 {{ end }}
 
-{{/* Blog post page syntax highlightning */}}
+{{/* Blog post page syntax highlighting */}}
 {{ if eq .Type "blog" }}
 {{ $syntax := resources.Get "css/syntax.css" }}
 {{ $syntax = $syntax | resources.Minify | fingerprint "md5" }}

@@ -1,6 +1,6 @@
 <a href="{{ .Permalink }}" class="no-underline block">
 	<div class="mb-4 border border-primary-light dark:border-secondary-light rounded-md overflow-hidden">
-		{{/* A span is used instead a div for accessibiliy, <a> tag can't wrap div elements */}}
+		{{/* A span is used instead a div for accessibility, <a> tag can't wrap div elements */}}
 			<span class="block">
 				{{ with .Params.banner }}
 				<div class="h-48 overflow-hidden bg-cover bg-center" style="background-image: url('{{ . | absURL }}');">
