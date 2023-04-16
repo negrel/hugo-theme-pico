@@ -133,3 +133,10 @@ weight = 2
 # languageCode = 'es'
 # languageName = 'Español'
 # weight = 4
+
+# Uncomment the following lines to add a German translation.
+# [languages.de]
+# contentDir = 'content/de'
+# languageCode = 'de'
+# languageName = 'Deutsch'
+# weight = 5
