@@ -33,7 +33,8 @@ Pico ships with an fully configured example site. For a quick preview:
 
 ```
 cd themes/pico/exampleSite/
-hugo server --themesDir ../..
+npm install
+hugo server
 ```
 
 Then visit `http://localhost:1313/` in your browser to view the example site.

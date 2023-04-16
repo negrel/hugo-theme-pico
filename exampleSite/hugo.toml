@@ -7,7 +7,6 @@ enableEmoji = true
 languageCode = 'en-us'
 # Number of blog post per page
 paginate = 10
-theme = 'pico'
 # Title of the website is used for the meta tag title
 # and the square icon (not the favicon)
 title = 'Pico'
@@ -133,3 +132,12 @@ weight = 2
 # languageCode = 'es'
 # languageName = 'Español'
 # weight = 4
+
+[module]
+  # uncomment line below for temporary local development of module
+  # needs hugo v0.109.0 or higher and go 1.18 or higher
+  # workspace = "hugo.work"
+  [module.hugoVersion]
+    extended = true
+  [[module.imports]]
+    path = "github.com/negrel/hugo-theme-pico"
