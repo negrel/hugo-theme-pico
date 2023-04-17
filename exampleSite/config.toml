@@ -94,7 +94,7 @@ pre = "" # pre is inserted before the translation (icons, image, etc)
 url = "/#contact" 
 weight = 30 
 
-# Syntax highlightning
+# Syntax highlighting
 [markup.highlight]
 guessSyntax = true 
 lineNumbersInTable = true 
