@@ -10,11 +10,11 @@
 		"dev": "hugo server ."
 	},
 	"dependencies": {
-		"autoprefixer": "^10.4.13",
-		"postcss": "^8.4.20",
+		"autoprefixer": "^10.4.14",
+		"postcss": "^8.4.23",
 		"postcss-cli": "^10.1.0",
 		"postcss-import": "^15.1.0",
-		"tailwindcss": "^3.2.4"
+		"tailwindcss": "^3.3.2"
 	},
 	"browserslist": [
 		"last 1 version",

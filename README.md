@@ -41,8 +41,8 @@ Then visit `http://localhost:1313/` in your browser to view the example site.
 ## Getting started
 
 ### Requirements
-- Extended version of [Hugo](https://gohugo.io/getting-started/installing/) (latest version recommended)  
-Some [NPM](https://npmjs.org) packages : 
+- Extended version of [Hugo](https://gohugo.io/getting-started/installing/) (latest version recommended)
+Some [NPM](https://npmjs.org) packages :
 - [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer)
