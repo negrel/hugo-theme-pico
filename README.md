@@ -85,7 +85,7 @@ hugo server
 Your website is running :smile:, you can start editing content files.
 
 ### Multilingual
-Pico currently ships with support for 5 languages (fr, en, it, es, de). Contributions for other language translations are welcome.
+Pico currently ships with support for 6 languages (fr, en, it, es, de, nl). Contributions for other language translations are welcome.
 To create a new language translation, add the .toml file to the i18n/ folder. See the existing files for the necessary fields.
 See the [hugo documentation](https://gohugo.io/content-management/multilingual/) for more details.
 

@@ -106,8 +106,9 @@ category = "categories"
 tag = "tags"
 
 # Translation
-# English, French and Italian are supported but you can contribute
-# by adding translation to i18n/ folder.
+# The following langauges are supported: English, French, Italian,
+# Spanish, German and Dutch. You can contribute by adding translation to
+# the i18n/ folder.
 [languages.en]
 contentDir = 'content/en'
 languageCode = 'en'
@@ -140,3 +141,10 @@ weight = 2
 # languageCode = 'de'
 # languageName = 'Deutsch'
 # weight = 5
+
+# Uncomment the following lines to add a Dutch translation.
+#[languages.nl]
+#contentDir = 'content/nl'
+#languageCode = 'nl'
+#languageName = 'Nederlands'
+#weight = 6

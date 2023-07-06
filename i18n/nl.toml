@@ -1,0 +1,56 @@
+[tagged_in]
+other = "Getagged in"
+
+[other_tags]
+other = "Andere tags"
+
+[read_more]
+other = "Verder lezen"
+
+[name]
+other = "Naam"
+
+[your_message]
+other = "Je bericht"
+
+[cancel]
+other = "Annuleren"
+
+[submit]
+other = "Versturen"
+
+[previous]
+other = "Vorige"
+
+[next]
+other = "Volgende"
+
+[back]
+other = "Terug"
+
+[contact]
+other = "Contact"
+
+[contact_email]
+other = "Contact via email"
+
+[latest_post]
+other = "Recentste post"
+
+[reading_time]
+other = "{{ .ReadingTime }} minuten leestijd"
+
+[home]
+other = "Hoofdpagina"
+
+[about]
+other = "Over"
+
+[blog]
+other = "Blog"
+
+[present]
+other = "Huidig"
+
+[required_fields]
+other = "Verplichte velden"
