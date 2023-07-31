@@ -14,7 +14,7 @@
 
 {{ if gt (len $js_bundle) 0 }}
 
-{{ $js_bundle = $js_bundle | resources.Concat "js/pico.min.js" | fingerprint "md5" }}
+{{ $js_bundle = $js_bundle | resources.Concat "js/pico.min.js" | fingerprint "sha256" }}
 <script src="{{ $js_bundle.Permalink }}" intergrity="{{ $js_bundle.Data.Integrity }}" crossorigin="anonymous"></script>
 
 {{ end }}
